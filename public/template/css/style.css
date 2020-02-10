@@ -1,0 +1,370 @@
+html, body{
+    height:100%;
+}
+.sub-nav {
+    position: fixed;
+    right: 0px;
+    z-index: 100;
+    background-color: #4dbb6d;
+    text-align: center;
+    display: none;
+    width: 100%;
+}
+.sub-nav ul{
+    margin: 0;
+    padding: 0px;
+}
+.sub-nav li{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 22px;
+}
+.header{
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-block;
+}
+.logo {
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    padding: 12px;
+}
+.header ul{
+    display: inline-block;
+    float: right;
+    /*margin-right: 30px;*/
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.12);*/
+    margin: 0;
+    padding: 0;
+}
+.header li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.header li:hover{
+    color: #4dbb6d;
+}
+.header a{
+    color: #fff;
+    font-size: 16px;
+    transition: ease all 300ms;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header a:hover{
+    color: #4dbb6d;
+}
+.header-sm {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 111;
+}
+.icon-menu-sm {
+    background-color: #4dbb6d;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.content{
+    height:100%;
+}
+.first-section{
+    /*height: 100%;*/
+    min-height: 100%;
+    width: 100%;
+    background: url('http://preview.oklerthemes.com/porto/5.7.2/img/demos/business-consulting/slides/slide-2.jpg') no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+.slogan{
+    margin-top: 100px;
+    /*margin-left: 60px;*/
+    /*position: absolute;*/
+    color: #fff;
+}
+.left{
+    /*width: 50%;*/
+    /*display: inline-block;*/
+    margin-top: 20px;
+}
+.left span {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+}
+.right {
+    width: 40%;
+    display: inline-block;
+    margin-left: 70px;
+}
+.first-intro {
+    margin-top: 200px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    /* position: absolute; */
+    display: inline-block;
+    width: 100%;
+}
+.item-contact {
+    /*display: inline-block;*/
+    /*width: 45%;*/
+    border-left: 2px solid #4a8961;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.title-contact {
+    color: #4dbb6d;
+    font-size: 16px;
+}
+.content-contact {
+    color: #fff;
+    font-size: 16px;
+}
+section{
+    padding: 50px 0px;
+}
+.intro, .product{
+    background-color: #e9f0f5;
+}
+.title-section{
+    color: #2e353e;
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-block;
+}
+.icon-count{
+    font-size: 28px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #4dbb6d;
+    height: 86px;
+    width: 60px;
+    text-align: center;
+    line-height: 86px;
+    color: #fff;
+    border-radius: 5px;
+}
+.number-count{
+    font-size: 50px;
+    color: #4dbb6d;
+    display: inline-block;
+    vertical-align: middle;
+}
+.counter {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.des-count {
+    display: block;
+    font-size: 18px;
+}
+.item-count {
+    margin-top: 30px;
+}
+
+.owl-dots {
+    text-align: right;
+    width: 100%;
+    margin-top: 30px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: -40px;
+}
+
+.owl-dot {
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background: rgba(127,127,127, 0.5);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.owl-dot.active {
+    background: #4dbb6d;
+}
+.title-slide {
+    color: #4dbb6d;
+    font-size: 26px;
+    font-weight: bold;
+}
+blockquote{
+    border-left: 5px solid #4dbb6d;
+    background-color: #fff;
+}
+.owl-carousel{
+    margin-top: 20px;
+}
+.product img{
+    height: 200px;
+}
+.item-product {
+    margin-top: 30px;
+    text-align: center;
+}
+.item-product-name {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+.item-product:hover .item-product-hover{
+    display: block;
+}
+.item-product-hover {
+    position: absolute;
+    height: 200px;
+    width: calc(100% - 30px);
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    line-height: 250px;
+    cursor: pointer;
+    display: none;
+}
+.item-plus {
+    font-size: 60px;
+    color: #fff;
+}
+
+.modal-content{
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #e9f0f5;
+}
+.close-modal{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+.modal-title {
+    font-size: 32px;
+}
+.nav-modal {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav-modal-active{
+    border-bottom: 2px solid #4dbb6d;
+    color: #4dbb6d;
+}
+.modal blockquote{
+    margin-top: 50px;
+    text-align: left;
+}
+.blockquote-reverse{
+    text-align: right !important;
+    border-right: 5px solid #4dbb6d;
+}
+blockquote span{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+#website-process{
+    display: none;
+}
+.close-footer {
+    margin-top: 50px;
+}
+.content-p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.modal-nds{
+    background-color: #fff;
+}
+.game-name {
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+}
+.download-game {
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.wrap-content-modal{
+    margin-top: 50px;
+}
+#modal-mobile, #modal-nds{
+    padding-right: 0px !important;
+}
+.icons{
+    text-align: center;
+    margin-top: 20px;
+}
+.icons i {
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    line-height: 80px;
+    background-color: #4dbb6d;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.wrapper-recruitment {
+    margin-top: 30px;
+}
+.title-recruitment {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #4dbb6d;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.recruitment a{
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #666;
+}
+.wrapper-post{
+    margin-top: 20px;
+}
+.contact-footer input{
+    margin: 20px 0px;
+}
+.contact-footer {
+    background: url(../images/contact-background.jpg) no-repeat;
+    background-size: cover;
+    color: #ddd;
+    font-size: 17px;
+}
+.title-section-footer {
+    color: #fff;
+}
+.item-contact-footer {
+    margin-top: 20px;
+}
