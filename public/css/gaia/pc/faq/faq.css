@@ -1,0 +1,78 @@
+
+.cat-icon {
+	font-size: 1.5rem;
+}
+
+.lst-question {
+	padding-left: 0;
+	list-style: none;
+}
+
+.lst-question li.ques-item {
+
+}
+
+.lst-question li.ques-item:first-child {}
+
+.ques-box {
+	padding: 5px 1.5rem;
+	border-bottom: 1px solid #eee;
+}
+
+.ques-box-close {
+	background-color: #fff;
+}
+.ques-box-open {
+	background-color: #fafafa;
+}
+
+.lst-question li.ques-item:hover .ques-box {
+	background-color: #f3f3f3;
+}
+
+.ques-icon {
+	font-size: 1.5rem;
+	vertical-align: middle;
+	font-weight: 600;
+}
+.ques-title {
+	vertical-align: middle;
+}
+
+.ques-ricon {
+	padding: 12px 8px 0;
+	cursor: pointer;
+}
+
+.anwser-box {
+	padding: 10px 3rem;
+}
+
+.anwser-icon {
+	font-weight: 600;
+	font-size: 1.125rem;
+}
+
+/*css_v2*/
+.card-title a, .ques-item a {
+	color: inherit !important;
+}
+.ques-box a:after {
+	font-family: feather !important;
+	content: "\e982";
+	float: right;
+	font-size: 14px;
+	padding: 6px 8px 0;
+}
+.ques-box a.collapsed:after {
+	content: "\e99d";
+}
+.card-title a:after {
+	font-family: feather !important;
+	content: "\e982";
+	float: right;font-size: 14px;
+	padding: 6px 8px 0;
+}
+.card-title a.collapsed:after {
+	content: "\e99d";
+}
