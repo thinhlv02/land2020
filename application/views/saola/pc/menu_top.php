@@ -5,12 +5,12 @@
         <a href="<?php echo base_url() ?>"><img src="<?php echo public_url('images/logo.png') ?>"></a>
     </div>
     <!--    switch language -->
-    <div id="language">
-        <a href="<?php echo $language == 'vietnamese' ? base_url('en/' . getLastUri()) : base_url('vn/' . getLastUri()) ?>">
-            <img src="<?php echo $language == 'vietnamese' ? public_url('images/flag_us.png') : public_url('images/flag_vn.png') ?>"/>
-            <?php echo $language == 'vietnamese' ? 'English' : 'Vietnamese'; ?>
-        </a>
-    </div>
+<!--    <div id="language">-->
+<!--        <a href="--><?php //echo $language == 'vietnamese' ? base_url('en/' . getLastUri()) : base_url('vn/' . getLastUri()) ?><!--">-->
+<!--            <img src="--><?php //echo $language == 'vietnamese' ? public_url('images/flag_us.png') : public_url('images/flag_vn.png') ?><!--"/>-->
+<!--            --><?php //echo $language == 'vietnamese' ? 'English' : 'Vietnamese'; ?>
+<!--        </a>-->
+<!--    </div>-->
 
     <ul class="ul-large">
         <li class="<?php echo activate_menu('index'); ?>" title="<?php echo $common_lang['home']; ?>">
@@ -56,19 +56,19 @@
         if (empty($user_login))
         { ?>
 
-            <li class="user_style pr-0 text-bold-60012" id="myBtnRegister" title="<?php echo $this->lang->line('register'); ?>">
-                <a href="javascript:void(0)" class="text-uppercase">
-                    <i class="mdi mdi-account-plus"></i>
-                    <?php echo $this->lang->line('register'); ?>
-                </a>
-            </li>
+<!--            <li class="user_style pr-0 text-bold-60012" id="myBtnRegister" title="--><?php //echo $this->lang->line('register'); ?><!--">-->
+<!--                <a href="javascript:void(0)" class="text-uppercase">-->
+<!--                    <i class="mdi mdi-account-plus"></i>-->
+<!--                    --><?php //echo $this->lang->line('register'); ?>
+<!--                </a>-->
+<!--            </li>-->
 
-            <li class="user_style p-0 text-bold-60012" id="myBtnLogin" title="<?php echo $this->lang->line('login'); ?>">
-                <a href="javascript:void(0)" class="menu_login text-uppercase">
-                    <i class="mdi mdi-login"></i>
-                    <?php echo $this->lang->line('login'); ?>
-                </a>
-            </li>
+<!--            <li class="user_style p-0 text-bold-60012" id="myBtnLogin" title="--><?php //echo $this->lang->line('login'); ?><!--">-->
+<!--                <a href="javascript:void(0)" class="menu_login text-uppercase">-->
+<!--                    <i class="mdi mdi-login"></i>-->
+<!--                    --><?php //echo $this->lang->line('login'); ?>
+<!--                </a>-->
+<!--            </li>-->
 
         <?php }
         ?>
