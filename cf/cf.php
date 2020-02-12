@@ -1,3 +1,3 @@
 <?php
 // frontend template folder
-define('TEMPLATE_FOLDER', 'saola/');
+define('TEMPLATE_FOLDER', 'gaia/');
