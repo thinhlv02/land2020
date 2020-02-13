@@ -198,12 +198,12 @@
                         <div class="row pack_land_box poster_land_box" style="border: 0;padding-left:10px;">
                             <div class="col-xs-3 pic_poster_land_box" style="padding-right: 30px !important;">
                                 <p style="padding: 4px;"><img src="<?php echo public_url('/images/ads/default.png') ?>"
-                                                              alt="Bất động sản Phúc Thịnh">
+                                                              alt="Thông tin bất động sản 24h">
                                 </p>
                             </div>
 
                             <div class="col-xs-9 detail_poster_land_box">
-                                <p><strong>Công ty/cá nhân</strong>: Bất động sản Phúc Thịnh</p>
+                                <p><strong>Công ty/cá nhân</strong>: Thông tin bất động sản 24h</p>
                                 <p><strong>Địa chỉ email</strong>: <?php echo $contact->email ?></p>
                                 <p><strong>Số điện thoại</strong>: <?php echo $contact->phone ?></p>
                                 <p>
