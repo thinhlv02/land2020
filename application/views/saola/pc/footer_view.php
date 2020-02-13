@@ -16,7 +16,7 @@
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
-                                Copyright © 2015 - 2019 Batdongsanphucthinh.vn
+                                Copyright © 2015 - 2019 thongtinbatdongsan24h.vn
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
@@ -27,13 +27,13 @@
                                 Giấy ĐKKD số: 0107708941 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
                                 14/11/2015
                                 <br>Chịu trách nhiệm nội dung: Bà Nguyễn Hạ Vy - ® Ghi rõ nguồn
-                                "Batdongsanphucthinh.vn" khi phát hành lại thông tin từ website này.
+                                "thongtinbatdongsan24h.vn" khi phát hành lại thông tin từ website này.
                                 <br>Toàn bộ quy chế, quy định giao dịch chung được đăng tải trên website áp dụng từ ngày
                                 14/11/2015.
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161; position: relative;">
                                 Phát triển bởi PhucthinhCorp
-                                <a style="color: #616161" href="javascript:void(0)" target="_blank">http:batdongsanphucthinh.vn</a>
+                                <a style="color: #616161" href="javascript:void(0)" target="_blank">http:thongtinbatdongsan24h.vn</a>
 
                             </div>
                             <div class="footer-bottom-end-row12">
