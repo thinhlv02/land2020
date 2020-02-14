@@ -200,7 +200,7 @@
                                     ?>
                                     <tr title="" class="odd" role="row">
                                         <td class="text-center">
-                                            <button class="btn btn-default btn-xs">PT-<?php echo $row->id . substr($row->code, 0, 3) ?></button>
+                                            <button class="btn btn-default btn-xs">TV-<?php echo $row->id . substr($row->code, 0, 3) ?></button>
                                         </td>
 
                                         <td> <?php echo $row->phone; ?></td>

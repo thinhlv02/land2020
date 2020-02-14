@@ -33,7 +33,7 @@
                                     <?php } ?>
                                 </div>
 
-                                <div class="code_row">PT-<?php echo $value->id.substr($value->code,0,2) ?></div>
+                                <div class="code_row">TV-<?php echo $value->id.substr($value->code,0,2) ?></div>
 
                                 <h3 style="height: 44px;font-size: 13px;overflow: hidden;border-bottom: 1px solid #ddd;">
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>

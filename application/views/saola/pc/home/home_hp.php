@@ -18,7 +18,7 @@
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                         src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                         alt="<?php echo $value->title ?>"></a>
-                                            <div class="code_row">PT-<?php echo $value->id . substr($value->code, 0, 3) ?></div>
+                                            <div class="code_row">TV-<?php echo $value->id . substr($value->code, 0, 3) ?></div>
                                         </div>
 
                                         <div class="col-xs-7 rtop2">
