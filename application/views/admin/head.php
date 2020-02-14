@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Dashboard - PhucThinh Land</title>
+<title>Dashboard - Tv land</title>
 <link rel="shortcut icon" type="image/png" href="<?php echo public_url('images/favicon.png')?>"/>
 <!-- Bootstrap -->
 <link href="<?php echo admin_theme()?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
