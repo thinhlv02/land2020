@@ -38,11 +38,11 @@
                         <li><a><i class="fa fa-book"></i>Quản lý chung<span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="<?php echo admin_url('news') ?>">Tin Tức </a></li>
-                                <li><a href="<?php echo admin_url('devices') ?>">Thiết bị sử dụng</a></li>
-                                <li><a href="<?php echo admin_url('customers') ?>">Khách hàng việc làm</a></li>
+<!--                                <li><a href="--><?php //echo admin_url('devices') ?><!--">Thiết bị sử dụng</a></li>-->
+<!--                                <li><a href="--><?php //echo admin_url('customers') ?><!--">Khách hàng việc làm</a></li>-->
                                 <li><a href="<?php echo admin_url('user') ?>">Khách hàng đăng ký website</a></li>
-                                <li><a href="<?php echo admin_url('transaction') ?>">Giao dịch</a></li>
-                                <li><a href="<?php echo admin_url('money') ?>">Tiền tiêu hao</a></li>
+<!--                                <li><a href="--><?php //echo admin_url('transaction') ?><!--">Giao dịch</a></li>-->
+<!--                                <li><a href="--><?php //echo admin_url('money') ?><!--">Tiền tiêu hao</a></li>-->
                                 <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
 
                                 <li><a href="<?php echo admin_url('product') ?>">Dịch vụ</a></li>
@@ -55,8 +55,8 @@
                                 <li><a href="<?php echo admin_url('broker') ?>">Chuyên viên tư vấn</a></li>
                                 <li><a href="<?php echo admin_url('banner') ?>">Quản lý banner web</a></li>
                                 <li><a href="<?php echo admin_url('category') ?>">Quản lý loại nhà đất</a></li>
-                                <li><a href="<?php echo admin_url('feedback') ?>">Hòm thư</a></li>
-                                <li><a href="<?php echo admin_url('recruitment') ?>">Tuyển dụng</a></li>
+<!--                                <li><a href="--><?php //echo admin_url('feedback') ?><!--">Hòm thư</a></li>-->
+<!--                                <li><a href="--><?php //echo admin_url('recruitment') ?><!--">Tuyển dụng</a></li>-->
                             </ul>
                         </li>
                     <?php } ?>
