@@ -19,7 +19,7 @@
 
                                         <?php foreach ($layer_left as $key => $value) { ?>
 
-                                            <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
+                                            <div class="item-re-list clearfix pt-1" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <div class="box-img-thumb">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>"
@@ -89,7 +89,7 @@
 
                                         <?php foreach ($layer_vip as $key => $value) { ?>
 
-                                            <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
+                                            <div class="item-re-list clearfix pt-1" onclick="updateView('<?php echo $value->id; ?>');">
 
                                                 <div class="clearfix box-title-item">
                                                     <h3 class="sieu-vip-title">
@@ -216,7 +216,7 @@
 
                                         <?php foreach ($layer_right as $key => $value) { ?>
 
-                                            <div class="item-re-list clearfix pt-5" onclick="updateView('<?php echo $value->id; ?>');">
+                                            <div class="item-re-list clearfix pt-1" onclick="updateView('<?php echo $value->id; ?>');">
                                                 <div class="box-img-thumb" style="max-height: 175px">
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <img src="<?php echo public_url('images/ads/' . $value->img) ?>"

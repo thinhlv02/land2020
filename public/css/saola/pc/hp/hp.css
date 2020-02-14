@@ -62,9 +62,9 @@
 }
 
 .body_top2_box ._pt_vip_hot, .body_top2_box ._vip {
-    background: -webkit-linear-gradient(#f6e97f, #fff);
-    background: -o-linear-gradient(#f6e97f, #fff);
-    background: -moz-linear-gradient(#f6e97f, #fff);
+    /*background: -webkit-linear-gradient(#f6e97f, #fff);*/
+    /*background: -o-linear-gradient(#f6e97f, #fff);*/
+    /*background: -moz-linear-gradient(#f6e97f, #fff);*/
     /* background: linear-gradient(#f6e97f, #fff); */
 }
 
@@ -77,7 +77,7 @@
 
 .body_top2_box .top2 > div._pt_vip_hot {
     /*border: 2px solid #f00;*/
-    height: 136px;
+    height: 173px;
 }
 
 .body_top2_box .top2 .rtop2 p {
@@ -97,7 +97,7 @@
 
 .body_top2_box .top2 .rtop2 h3 span {
     width: 60px;
-    /*display: inline-block;*/
+    display: inline-block;
     border-bottom: 3px solid #d3d3d3;
     /*margin-top: 5px;*/
 }
@@ -122,7 +122,7 @@
     font-weight: 600;
     line-height: 18px;
     display: block;
-    max-height: 36px;
+    max-height: 54px;
     overflow: hidden;
 }
 

@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="card12" style="border: 1px solid #cacfe7;">
-        <div class="card-body pt-0 " style="height: 265px;">
+        <div class="card-body pt-0 p-1" style="height: 285px;">
 
             <form id="formAddProduct_book12" data-parsley-validate class="" method="get"
                   action="<?php echo base_url('tim-kiem') ?>"

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-9 col-sm-12 col-xs-12 mt-2">
             <div class="card">
-            <div class="card-body pt-0 ">
+            <div class="card-body pt-0 p-1">
 <!--                <ol class="breadcrumb">-->
 <!--                    <li class="font16" style="color: #055699;-->
 <!--    text-transform: none;">--><?php //echo $ads->title ?><!--</li>-->

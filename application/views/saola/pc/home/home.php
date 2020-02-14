@@ -2,7 +2,7 @@
 <?php $this->load->view($this->_template_f . 'banner/banner_wide')?>
 <?php $this->load->view($this->_template_f . 'home/home_slider')?>
 <?php $this->load->view($this->_template_f . 'home/home_center_2020')?>
-<?php $this->load->view($this->_template_f . 'home/home_hp')?>
+<?php $this->load->view($this->_template_f . 'home/home_hp_2020')?>
 <?php $this->load->view($this->_template_f . 'home/home_col3')?>
 <?php //$this->load->view($this->_template_f . 'home/highlight') ?>
 <?php //$this->load->view($this->_template_f . 'home/service') ?>
