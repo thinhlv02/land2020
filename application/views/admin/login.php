@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PhucthinhCorp! | </title>
+    <title>tvcorp! | </title>
 
     <!-- Bootstrap -->
     <link href="<?php echo admin_theme(''); ?>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,8 +55,8 @@
                         <br/>
 
                         <div>
-                            <h1><i class="fa fa-paw"></i> PhucthinhCorp!</h1>
-                            <p>©2014 All Rights Reserved. PhucthinhCorp! is a Custom template. Privacy and Terms</p>
+                            <h1><i class="fa fa-paw"></i> tvcorp!</h1>
+                            <p>©2014 All Rights Reserved. tvcorp! is a Custom template. Privacy and Terms</p>
                         </div>
                     </div>
                 </form>

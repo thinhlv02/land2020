@@ -13,7 +13,7 @@ class Sendmail extends MY_Controller
         $createUinfo = [];
 
         $create_request_uname = isset($createUinfo['username']) ? $createUinfo['username'] : '';
-        $create_request_email = isset($createUinfo['email']) ? $createUinfo['email'] : 'phucthinhcorp1411@gmail.com';
+        $create_request_email = isset($createUinfo['email']) ? $createUinfo['email'] : 'tvcorp1411@gmail.com';
 
 //        $receive_uname = isset($receive_uInfo['username']) ? $receive_uInfo['username'] : '';
 //        $receive_email = isset($receive_uInfo['email']) ? $receive_uInfo['email'] : '';

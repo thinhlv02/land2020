@@ -32,7 +32,7 @@
                                 14/11/2015.
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161; position: relative;">
-                                Phát triển bởi PhucthinhCorp
+                                Phát triển bởi tvcorp
                                 <a style="color: #616161" href="javascript:void(0)" target="_blank">http:thongtinbatdongsan24h.vn</a>
 
                             </div>
