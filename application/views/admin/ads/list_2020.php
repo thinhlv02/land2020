@@ -174,6 +174,7 @@
     // $(document).ready(function () {
     //     $('#datatable-news').dataTable({
     //         "ordering": false,
+    //         "ordering": false,
     //         "iDisplayLength": 30,
     //     });
     // });
