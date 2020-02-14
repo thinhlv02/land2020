@@ -173,7 +173,7 @@
 <script>
     // $(document).ready(function () {
     //     $('#datatable-news').dataTable({
-    //         "ordering": false12,
+    //         "ordering": false,
     //         "iDisplayLength": 30,
     //     });
     // });
