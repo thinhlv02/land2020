@@ -7,6 +7,8 @@
 //die();
 //die();
 //die();
+//die();
+//die();
 // custom define
 require_once('cf/cf.php');
 /**
