@@ -29,8 +29,12 @@
                                 </div>
                                 <div class="product-info">
                                     <i class="mdi mdi-map-marker mdi-24px" style="color: #e40b00"></i>
-                                    <a href="javascript:void()" title="<?php echo $value->title ?>">Quận 2</a>,
-                                    <a href="javascript:void()" title="<?php echo $value->title ?>">Hồ Chí Minh</a>
+                                    <a href="javascript:void()" title="<?php echo $value->title ?>">
+                                        <?php echo $value->district_name != '' ? $value->district_name : 'update...'; ?>
+                                    </a>,
+                                    <a href="javascript:void()" title="<?php echo $value->title ?>">
+                                        <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -50,5 +54,25 @@
         width: 257px;
         height: 147px;
         border-radius: 5px 5px 0 0;
+    }
+
+    .home-product-bound a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2D373F;
+        margin-bottom: 7px;
+        text-transform: inherit;
+    }
+
+    .home-product-bound .p-title {
+        height: 65px;
+        overflow: hidden;
+    }
+
+    .home-product-bound .product-info a {
+        font-weight: normal;
+        font-size: 14px;
+        color: #777;
     }
 </style>
