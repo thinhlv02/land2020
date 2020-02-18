@@ -4,6 +4,11 @@
 
 /*start*/
 
+:root {
+    /*--blue-color: #1E9FF2;*/
+    --blue-color: #055699;
+}
+
 .m-0 {
     margin: 0 !important
 }
@@ -373,7 +378,7 @@
 
 
 .box-module {
-    border-bottom: 2px #2199e8 solid;
+    border-bottom: 2px var(--blue-color) solid;
 }
 
 
