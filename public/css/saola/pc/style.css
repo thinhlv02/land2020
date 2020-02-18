@@ -1356,7 +1356,7 @@ button#myPageup {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #03a84e;
+    background-color: var(--blue-color);
     color: white;
     cursor: pointer;
     /*padding: 15px;*/
@@ -1450,3 +1450,10 @@ button#myPageup {
 
 }
 /*css footer*/
+
+/*css form search*/
+
+.btn-search {
+    color: #fff;
+    background: var(--blue-color);
+}
