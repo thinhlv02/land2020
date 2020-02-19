@@ -61,57 +61,50 @@
 
         <?php $this->load->view($this->_template_f . 'home/form_search') ?>
 
-        <div class="col-xs-10  left catland_page">
+        <div class="col-xs-10  left12 catland_page">
 
             <!--Begin land_box-->
             <div class="_box">
-                <p class="title_box"><strong>Tìm kiếm nhà đất</strong></p>
+                <div class="box-module mt-2">
+                    <div class="bg-modul">Kết quả tìm kiếm</div>
+                </div>
 
                 <div class="listland_box pt_hotLand_home row12">
 
                     <?php foreach ($lstSearch as $key => $value) { ?>
 
-                    <div class="col-xs-4 item pl-5 pr-5 ">
-                        <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
-                                    src="<?php echo public_url('images/ads/' . $value->img) ?>"
-                                    alt="<?php echo $value->title ?>"></a>
-                        <div class="pt_icon_viphot" style="position: absolute;top: 1px;left: 4px;">
-                            <?php if ($value->icon_new == 1) { ?>
-                                <img src="<?php echo public_url('images/icon_new.gif') ?>"
-                                     alt="<?php echo $value->title ?>">
-                            <?php } ?>
+                        <div class="col-md-3 col-sm-6 col-xs-12 top2 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');" style="padding-right: 1rem !important;padding-top: 1rem !important;">
 
-                            <?php if ($value->icon_vip == 1) { ?>
-                                <img src="<?php echo public_url('images/icon_vip.gif') ?>"
-                                     alt="<?php echo $value->title ?>">
-                            <?php } ?>
+                            <div class="vip5">
+                                <div class="product-thumb">
+                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->title ?>" noloaderror="true" imgerr="3">
+                                    </a>
+                                </div>
+                                <div class="home-product-bound">
+                                    <div class="p-title" style="height: 65px;">
+                                        <a title="<?php echo $value->title ?>" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                            <?php echo $value->title ?>***</a>
+                                    </div>
+                                    <div class="product-price p-2"><?php echo $value->price ?></div>
+                                    <div class="product-info p-2">
+                                        <i class="mdi mdi-select mdi-24px" style="color: #e40b00"></i>
 
-                            <?php if ($value->icon_hot == 1) { ?>
-                                <img src="<?php echo public_url('images/icon_hot.gif') ?>"
-                                     alt="<?php echo $value->title ?>">
-                            <?php } ?>
-                        </div>
-
-                        <div class="code_row">TV-<?php echo $value->id.substr($value->code,0,3) ?></div>
-                        <h3>
-                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                <?php echo $value->title ?></a></h3>
-
-                        <p><?php echo $value->intro ?></p>
-
-                        <div class="row area gia-title">
-                            <div class="col-xs-6 larea">DTMB: <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
-                            <div class="col-xs-6 larea">DTSD: <strong><?php echo $value->useacreage != '' ? $value->useacreage: 0 ?> m<sup>2</sup></strong></div>
-                        </div>
-
-                        <div class="price">
-                            <div class="col-xs-6 btn btn-sm btn-outline-warning"><i class="fa fa-map-marker"></i> <?php echo $value->province_name ?></div>
-                            <div class="col-xs-6 btn btn-sm btn-primary">Giá:
-                                <?php echo $value->price ?> VND
+                                        <?php echo $value->useacreage != '' ? $value->useacreage : 0 ?> m²
+                                    </div>
+                                    <div class="product-info">
+                                        <i class="mdi mdi-map-marker mdi-24px" style="color: #e40b00"></i>
+                                        <a href="javascript:void()" title="<?php echo $value->title ?>">
+                                            <?php echo $value->district_name != '' ? $value->district_name : 'update...'; ?>
+                                        </a>,
+                                        <a href="javascript:void()" title="<?php echo $value->title ?>">
+                                            <?php echo $value->province_name != '' ? $value->province_name : 'update...'; ?>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
 
                     <?php } ?>
 
@@ -121,11 +114,10 @@
             </div>
             <!--End detail_land-->
 
-
         </div>
 
-
     </div>
+
 </section>
 
 <style>

@@ -21,15 +21,15 @@
 }
 
 .pt_hotLand_home, .item_ads h3 {
-    height: 40px;
-    overflow: hidden;
-    margin: 10px 0;
+    /*height: 40px;*/
+    /*overflow: hidden;*/
+    /*margin: 10px 0;*/
 }
 
 .pt_hotLand_home, .item_ads > p {
-    line-height: 18px;
-    height: 72px;
-    overflow: hidden;
+    /*line-height: 18px;*/
+    /*height: 72px;*/
+    /*overflow: hidden;*/
 }
 
 .item_ads > p {
@@ -77,7 +77,7 @@
 
 .body_top2_box .top2 > div._pt_vip_hot {
     /*border: 2px solid #f00;*/
-    height: 173px;
+    height: 136px;
 }
 
 .body_top2_box .top2 .rtop2 p {
@@ -122,7 +122,7 @@
     font-weight: 600;
     line-height: 18px;
     display: block;
-    max-height: 54px;
+    max-height: 36px;
     overflow: hidden;
 }
 
