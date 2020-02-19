@@ -25,6 +25,13 @@
         <div class="row" style="margin-top: 10px">
             <form id="formAddCatalog" data-parsley-validate class="form-horizontal form-label-left" method="post">
                 <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">SiteURL
+                        <span class="required">*</span></label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" id="" name="txtsiteurl" value="<?php echo $contact->siteurl ?>" required="required" class="form-control col-md-7 col-xs-12">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Tên công ty
                         <span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">

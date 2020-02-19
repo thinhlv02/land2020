@@ -16,6 +16,7 @@ Class Contact extends MY_Controller
         $this->data['message'] = $message;
         if ($this->input->post('btnUpdateContact'))
         {
+            $txtsiteurl = $this->input->post('txtsiteurl');
             $company = $this->input->post('txtCompany');
             $phone = $this->input->post('txtPhone');
             $address = $this->input->post('txtAddress');
@@ -26,6 +27,7 @@ Class Contact extends MY_Controller
             if ($phone && $address)
             {
                 $contact_submit = array(
+                    'siteurl' => $txtsiteurl,
                     'company' => $company,
                     'phone' => $phone,
                     'address' => $address,

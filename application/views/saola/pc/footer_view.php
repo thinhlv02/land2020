@@ -16,24 +16,32 @@
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
-                                Copyright © 2015 - 2019 thongtinbatdongsan24h.vn
+                                Copyright © 2015 - 2019 <?php echo $contact->siteurl ?>
                             </div>
 
                             <div class="footer-bottom-end-row12" style="color: #616161">
-                                Email: <?php echo $contact->email ?>
+                                Email: <?php
+                                $tags_mail = explode('|', $contact->email);
+
+                                foreach ($tags_mail as $key)
+                                {
+                                    echo $key . '@' . substr($contact->siteurl, 7);
+                                }
+
+                                ?>
 
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161">
                                 Giấy ĐKKD số: 0107708941 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
                                 14/11/2015
                                 <br>Chịu trách nhiệm nội dung: Bà Nguyễn Hạ Vy - ® Ghi rõ nguồn
-                                "thongtinbatdongsan24h.vn" khi phát hành lại thông tin từ website này.
+                                "<?php echo $contact->siteurl ?>" khi phát hành lại thông tin từ website này.
                                 <br>Toàn bộ quy chế, quy định giao dịch chung được đăng tải trên website áp dụng từ ngày
                                 14/11/2015.
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161; position: relative;">
                                 Phát triển bởi tvcorp
-                                <a style="color: #616161" href="javascript:void(0)" target="_blank">http:thongtinbatdongsan24h.vn</a>
+                                <a style="color: #616161" href="<?php echo $contact->siteurl ?>" target="_blank">http:<?php echo $contact->siteurl ?></a>
 
                             </div>
                             <div class="footer-bottom-end-row12">
@@ -58,7 +66,12 @@
                                 <span><i class="mdi mdi-phone text-danger12"></i> <?php echo $contact->phone ?></span>
                             </div>
                             <div style="">
-                                <span><i class="mdi mdi-email-outline text-danger12"></i> <?php echo $contact->email ?></span>
+                                <span><i class="mdi mdi-email-outline text-danger12"></i> <?php
+                                    foreach ($tags_mail as $key)
+                                    {
+                                        echo $key . '@' . substr($contact->siteurl, 7) . '</br>';
+                                    }
+                                    ?></span>
                             </div>
                         </div>
                         <div class="col-md-2  col-sm-12 col-xs-12 mt-2">
@@ -96,9 +109,9 @@
                     <div class="card-body line-height-2 pt-0 p-1" style="background-color: #EDEDED">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <h2 class="icon-title mb-2" id="">
-<!--                                <strong class="bg">-->
-<!--                                    <i class="mdi mdi-monitor-multiple"></i>-->
-<!--                                </strong>-->
+                                <!--                                <strong class="bg">-->
+                                <!--                                    <i class="mdi mdi-monitor-multiple"></i>-->
+                                <!--                                </strong>-->
                                 <span class="font-weight-600" style="font-size: 14px !important;">CÁC ĐẠI LÝ ỦY QUYỀN HỢP TÁC VỚI CHÚNG TÔI!</span>
                             </h2>
 
