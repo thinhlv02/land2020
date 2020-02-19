@@ -56,6 +56,25 @@
         border-radius: 5px 5px 0 0;
     }
 
+    .home-product-bound .product-price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #055699;
+    }
+
+    .product-info {
+        font-size: 14px;
+        line-height: 26px;
+        color: #777;
+    }
+
+    .home-product-bound .product-info a {
+        font-weight: normal;
+        font-size: 14px;
+        color: #777;
+    }
+
     /*.home-product-bound a {*/
     /*    font-weight: 700;*/
     /*    font-size: 16px;*/

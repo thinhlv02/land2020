@@ -29,7 +29,7 @@ $lang['common_lang']['confirm_no'] = 'Hủy bỏ';
 
 //search
 $lang['common_lang']['page_title'] = 'Trang tìm kiếm';
-$lang['common_lang']['search_title'] = 'Công cụ tìm kiếm';
+$lang['common_lang']['search_title'] = 'Tìm kiếm';
 $lang['common_lang']['search_phone'] = 'Số điện thoại';
 $lang['common_lang']['choose_province'] = 'Tỉnh/thành phố';
 $lang['common_lang']['choose_district'] = 'Quận/huyện';

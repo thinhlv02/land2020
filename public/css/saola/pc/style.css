@@ -27,8 +27,8 @@ a:hover {
     left: 0;
     top: 0;
     z-index: 100;
-    /*background-color: #ddd;*/
-    background-color: var(--blue-color);
+    background-color: #eee;
+    /*background-color: var(--blue-color);*/
     text-align: center;
     /*display: none;*/
     width: 100%;
@@ -48,7 +48,7 @@ a:hover {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid transparent;
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid var(--blue-color);
 }
 
 .ul-large {
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .ul-large li a {
-    color: #FFFFFF;
+    color: #2D373F;
     /*color: #4dbb6d;*/
     padding: 20px 3px;
     font-size: 1.1rem;
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .ul-large li:hover {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--blue-color);
 }
 
 .menu-active {
@@ -86,7 +86,8 @@ a:hover {
     /*background-color: #f90;*/
     /*background-color: #ff7e39;*/
     /*border-bottom: 5px solid #4dbb6d;*/
-    border-bottom: 3px solid #fff;
+    /*border-bottom: 3px solid #fff;*/
+    border-bottom: 3px solid var(--blue-color);
 }
 
 .banner {

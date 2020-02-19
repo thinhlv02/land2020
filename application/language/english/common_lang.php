@@ -30,7 +30,7 @@ $lang['common_lang']['confirm_no'] = 'Cancel';
 
 //search
 $lang['common_lang']['page_title'] = 'Trang tìm kiếm';
-$lang['common_lang']['search_title'] = 'Search tools';
+$lang['common_lang']['search_title'] = 'Search';
 $lang['common_lang']['search_phone'] = 'Phone number';
 $lang['common_lang']['choose_province'] = 'Choose Pro/City';
 $lang['common_lang']['choose_district'] = 'Choose district';

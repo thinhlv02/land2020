@@ -7,14 +7,18 @@
                 <div class="col-xs-9">
 
                     <div class="left_box top2_box">
-                        <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>
+<!--                        <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>-->
+
+                        <div class="box-module mt-2">
+                            <div class="bg-modul">TIN GIÁ HẤP DẪN</div>
+                        </div>
 
                         <div class="body_top2_box">
 
                             <?php foreach ($ads_center as $key => $value) { ?>
-                                <div class="col-xs-6 top2 top2_up">
-                                    <div class="_pt_vip_hot border-danger12 p-1">
-                                        <div class="col-xs-5 ltop2">
+                                <div class="col-xs-6 top2 top2_up " style="padding-left: 0px !important;">
+                                    <div class="_pt_vip_hot border-danger12 p-1" style="padding-left: 0px !important;">
+                                        <div class="col-xs-5 ltop2" style="padding-left: 0px !important;">
                                             <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                         src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                         alt="<?php echo $value->title ?>"></a>
@@ -48,9 +52,11 @@
                 <div class="col-xs-3 right">
                     <!--Begin slide top-->
                     <div class="right_box vip_box">
-                        <p class="title_box">
-                            <strong>TIN VIP</strong>
-                        </p>
+
+                        <div class="box-module mt-2">
+                            <div class="bg-modul">TIN VIP</div>
+                        </div>
+
                         <div>
                             <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                                 <ul class="pt_slider"
