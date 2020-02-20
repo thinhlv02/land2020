@@ -1452,9 +1452,7 @@ button#myPageup {
 
 /*css footer*/
 
-/*css form search*/
-
+/*css btn search home*/
 .btn-search {
-    color: #fff;
     background: var(--blue-color);
 }
