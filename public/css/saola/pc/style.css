@@ -1448,7 +1448,6 @@ button#myPageup {
     background-color: var(--blue-color);
     -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
     clip-path: polygon(0% 100%, 100% 169%, -10% -378%);
-
 }
 
 /*css footer*/
