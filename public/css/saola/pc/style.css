@@ -4,7 +4,7 @@
 }
 
 html, body {
-    font-family: 'Nunito Sans',Tahoma;
+    font-family: 'Nunito Sans', Tahoma;
     font-size: 13px;
     line-height: 18px;
 }
@@ -1450,15 +1450,9 @@ button#myPageup {
     clip-path: polygon(0% 100%, 100% 169%, -10% -378%);
 
 }
+
 /*css footer*/
 
-/*css form search*/
-/*css form search*/
-/*css form search*/
-/*css form search*/
-/*css form search*/
-/*css form search*/
-/*css form search*/
 /*css form search*/
 
 .btn-search {
