@@ -41,8 +41,8 @@
 <!--                                <li><a href="--><?php //echo admin_url('devices') ?><!--">Thiết bị sử dụng</a></li>-->
 <!--                                <li><a href="--><?php //echo admin_url('customers') ?><!--">Khách hàng việc làm</a></li>-->
                                 <li><a href="<?php echo admin_url('user') ?>">Khách hàng đăng ký website</a></li>
-<!--                                <li><a href="--><?php //echo admin_url('transaction') ?><!--">Giao dịch</a></li>-->
-<!--                                <li><a href="--><?php //echo admin_url('money') ?><!--">Tiền tiêu hao</a></li>-->
+                                <li><a href="<?php echo admin_url('transaction') ?>">Giao dịch</a></li>
+                                <li><a href="<?php echo admin_url('money') ?>">Tiền tiêu hao</a></li>
                                 <!--                                <li><a href="--><?php //echo admin_url('Upload_Files') ?><!--">Upload_Files</a></li>-->
 
                                 <li><a href="<?php echo admin_url('product') ?>">Dịch vụ</a></li>
