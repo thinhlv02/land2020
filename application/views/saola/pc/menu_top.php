@@ -2,7 +2,7 @@
 
 <div class="sub-nav">
     <div class="logo">
-        <a href="<?php echo base_url() ?>"><img src="<?php echo public_url('images/logo.png') ?>"></a>
+        <a href="<?php echo base_url() ?>"><img src="<?php echo public_url('images/logo.png') ?>" alt="logo2020"></a>
     </div>
     <!--    switch language -->
 <!--    <div id="language">-->
