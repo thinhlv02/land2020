@@ -51,7 +51,7 @@
             <a href="<?php echo base_url('tuyen-dung.html') ?>"> <?php echo $common_lang['lmenu_recruitment']; ?></a>
         </li>
 
-        <!--        register - login-->
+        <!--        register - loginnnnnnnnnnnnnnnn-->
         <?php
         if (empty($user_login))
         { ?>
