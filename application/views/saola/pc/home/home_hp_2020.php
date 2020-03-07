@@ -10,7 +10,7 @@
 <!--                        <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>-->
 
                         <div class="box-module mt-2">
-                            <div class="bg-modul">TIN GIÁ HẤP DẪN</div>
+                            <div class="bg-modul">TIN VIP</div>
                         </div>
 
                         <div class="body_top2_box">
@@ -54,7 +54,7 @@
                     <div class="right_box vip_box">
 
                         <div class="box-module mt-2">
-                            <div class="bg-modul">TIN VIP</div>
+                            <div class="bg-modul">TIN HOT</div>
                         </div>
 
                         <div>
