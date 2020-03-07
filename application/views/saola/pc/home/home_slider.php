@@ -5,7 +5,7 @@
 
             <?php $this->load->view($this->_template_f . 'home/form_search') ?>
 
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-5 col-md-5">
 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -39,7 +39,7 @@
 
             </div>
 
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-5 col-md-5">
 
                 <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
