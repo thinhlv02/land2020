@@ -44,7 +44,7 @@
                                         foreach ($ads_end as $k1 => $v1)
                                         { ?>
                                             <div class="pack_land_box">
-                                                <div class="row">
+                                                <div class="row12">
                                                     <div class="col-xs-12 pland">
                                                         <div class="ads_link">
                                                             <?php $tags_link = explode('a href="', trim($v1->link_web)); ?>
