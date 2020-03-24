@@ -109,12 +109,14 @@
 
                         <div class="pack_land_box">
                             <div class="row12">
-                                <div class="col-xs-4 pland"><strong>Chiều rộng:</strong>
-                                    <?php echo $ads->width != '' ? $ads->width : 0 ?>m
-                                </div>
                                 <div class="col-xs-4 pland"><strong>Chiều dài:</strong>
                                     <?php echo $ads->landwidth != '' ? $ads->landwidth : 0 ?>m
                                 </div>
+
+                                <div class="col-xs-4 pland"><strong>Chiều rộng:</strong>
+                                    <?php echo $ads->width != '' ? $ads->width : 0 ?>m
+                                </div>
+
                                 <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
                             </div>
 

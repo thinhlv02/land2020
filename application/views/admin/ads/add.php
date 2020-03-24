@@ -76,28 +76,29 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích<span class="required">*</span></label>
-                    <div class="col-md-2 col-sm-2 col-xs-12">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích MB<span class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="acreage" class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 90">
                     </div>
 
-<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích SD<span class="required">*</span></label>-->
-<!--                    <div class="col-md-4 col-sm-4 col-xs-12">-->
-<!--                        <input type="text" name="useacreage" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">-->
-<!--                    </div>-->
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Diện tích SD<span class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" name="useacreage" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 90">
+                    </div>
 
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Mặt tiền<span class="required">*</span></label>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Chiều dài<span class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" name="landwidth" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
+                    </div>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Chiều rộng<span class="required">*</span></label>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="text" name="width" class="form-control col-md-7 col-xs-12" placeholder="ví dụ: 10">
                     </div>
 
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Đường vào<span class="required">*</span></label>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <input type="text" name="landwidth" class="form-control col-md-12 col-xs-12" placeholder="ví dụ: 20">
-                    </div>
+
 
                 </div>
 
