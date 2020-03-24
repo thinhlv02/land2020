@@ -77,7 +77,7 @@
                                         m<sup>2</sup></div>
                                 </div>
 
-                                <div class="row m-0" style="display: none;">
+                                <div class="row m-0">
                                     <div class="col-xs-6 ibrief"><strong>- Danh mục:</strong>
                                         <a href="javascript:void(0)">Cần bán</a></div>
                                     <div class="col-xs-6 ibrief"><strong>- Loại BĐS:</strong>
@@ -121,13 +121,19 @@
                             <div class="row12">
                                 <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> <?php echo $ads->acreage ?> m<sup>2</sup>
                                 </div>
-                                <div class="col-xs-8 pland">
+                                <div class="col-xs-4 pland">
                                     <strong>Diện tích SD:</strong> <?php echo $ads->useacreage ?> m<sup>2</sup>
                                 </div>
-
+                                <div class="col-xs-4 pland"><strong>Hướng:</strong>
+                                    <?php echo $ads->homedirection != '' ? $ads->homedirection : 'KXD' ?></div>
                             </div>
 
-
+                            <div class="row12">
+                                <div class="col-xs-12 pland">
+                                    <strong>Tên dự án:</strong>
+                                    <?php echo $ads->project != '' ? $ads->project : 'KXD' ?>
+                                </div>
+                            </div>
 
                             <div class="row12">
                                 <div class="col-xs-12 pland">

@@ -143,7 +143,7 @@ Class Ads extends MY_Controller
         $this->data['_uid'] = $this->_uid;
         $this->data['tab'] = 1;
         $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/list_2020';
+        $this->data['view'] = 'admin/ads/list';
         $this->load->view('admin/layout', $this->data);
     }
 
