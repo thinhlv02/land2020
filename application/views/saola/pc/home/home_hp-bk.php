@@ -4,7 +4,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="row two_cols">
 
-                <div class="col-xs-12">
+                <div class="col-xs-9">
 
                     <div class="left_box top2_box">
                         <p class="title_box"><strong>TIN GIÁ HẤP DẪN</strong></p>
@@ -25,7 +25,7 @@
                                             <h3>
                                                 <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?> </a>
-<!--                                                <span></span>-->
+                                                <span></span>
                                             </h3>
                                             <div><?php echo $value->intro ?>
                                             </div>
@@ -61,7 +61,7 @@
                     <!--End two_cols-->
                 </div>
 
-                <div class="col-xs-3 right" style="display: none!important;">
+                <div class="col-xs-3 right">
                     <!--Begin slide top-->
                     <div class="right_box vip_box">
                         <p class="title_box">
