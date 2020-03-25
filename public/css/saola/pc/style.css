@@ -132,7 +132,8 @@ a:hover {
 }
 
 .logo img {
-    max-height: 45px;
+    /*max-height: 45px;*/
+    max-height: 72px;
     padding: 2px 15px;
 }
 
