@@ -58,9 +58,9 @@
             <div class="col-md-2 col-sm-2 col-xs-12">
                 <select class="select2_group form-control" id="location" name="location" onchange="loadPage()">
                     <option value="-1">-- Chọn vị trí --</option>
-                    <option value="ads_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_left') echo 'selected' ?> > Ads left</option>
-                    <option value="ads_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_right') echo 'selected' ?> > ads_right</option>
-                    <option value="ads_center" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_center') echo 'selected' ?> > ads_center</option>
+                    <option value="ads_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_left') echo 'selected' ?> > Banner trái</option>
+                    <option value="ads_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_right') echo 'selected' ?> >Banner phải</option>
+                    <option value="ads_center" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_center') echo 'selected' ?> >Bđs nổi bật</option>
                     <option value="layer_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_left') echo 'selected' ?> > layer_left</option>
                     <option value="layer_vip" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_vip') echo 'selected' ?> > layer_vip</option>
                     <option value="layer_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_right') echo 'selected' ?> > layer_right</option>
@@ -82,7 +82,7 @@
                 <th>Ảnh</th>
                 <th>Tiêu đề</th>
                 <th>Giá / Diện tích</th>
-                <th>Banner</th>
+                <th>Vị trí tin</th>
                 <th>Layer</th>
                 <th>Trạng thái</th>
                 <th>Xem</th>
@@ -138,7 +138,7 @@
                         <p>
                             <i id="ads_center-<?php echo $row->id ?>"
                                class="fa fa-lg <?php echo $row->ads_center ? 'fa-toggle-on' : 'fa-toggle-off' ?> success"
-                               onclick="ads_center(<?php echo $row->id ?>)"></i> banner giữa
+                               onclick="ads_center(<?php echo $row->id ?>)"></i> BĐS nổi bật
                         </p>
 
                     </td>
