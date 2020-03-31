@@ -11,7 +11,8 @@
 
                         <div class="body_top2_box">
 
-                            <?php foreach ($ads_center as $key => $value) { ?>
+<!--                            --><?php //foreach ($ads_center as $key => $value) { ?>
+                            <?php foreach ($layer_left as $key => $value) { ?>
                                 <div class="col-xs-6 top2 top2_up">
                                     <div class="_pt_vip_hot border-danger p-1">
                                         <div class="col-xs-5 ltop2">

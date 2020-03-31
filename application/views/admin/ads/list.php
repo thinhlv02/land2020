@@ -61,9 +61,9 @@
                     <option value="ads_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_left') echo 'selected' ?> > Banner trái</option>
                     <option value="ads_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_right') echo 'selected' ?> >Banner phải</option>
                     <option value="ads_center" <?php if (isset($_GET['location']) && $_GET['location'] == 'ads_center') echo 'selected' ?> >Bđs nổi bật</option>
-                    <option value="layer_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_left') echo 'selected' ?> > layer_left</option>
-                    <option value="layer_vip" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_vip') echo 'selected' ?> > layer_vip</option>
-                    <option value="layer_right" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_right') echo 'selected' ?> > layer_right</option>
+                    <option value="layer_left" <?php if (isset($_GET['location']) && $_GET['location'] == 'layer_left') echo 'selected' ?> > TIN GIÁ HẤP DẪN</option>
+<!--                    <option value="layer_vip" --><?php //if (isset($_GET['location']) && $_GET['location'] == 'layer_vip') echo 'selected' ?><!-- > layer_vip</option>-->
+<!--                    <option value="layer_right" --><?php //if (isset($_GET['location']) && $_GET['location'] == 'layer_right') echo 'selected' ?><!-- > layer_right</option>-->
                 </select>
             </div>
 
@@ -83,7 +83,8 @@
                 <th>Tiêu đề</th>
                 <th>Giá / Diện tích</th>
                 <th>Vị trí tin</th>
-                <th>Layer</th>
+<!--                <th>Vị trí tin dưới</th>-->
+<!--                <th>Layer</th>-->
                 <th>Trạng thái</th>
                 <th>Xem</th>
                 <th>Ngày Tạo</th>
@@ -141,26 +142,32 @@
                                onclick="ads_center(<?php echo $row->id ?>)"></i> BĐS nổi bật
                         </p>
 
-                    </td>
-
-                    <td>
                         <p>
                             <i id="layer_left-<?php echo $row->id ?>"
                                class="fa fa-lg <?php echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off' ?> danger"
-                               onclick="layer_left(<?php echo $row->id ?>)"></i> layer trái
-                        </p>
-                        <p>
-                            <i id="layer_vip-<?php echo $row->id ?>"
-                               class="fa fa-lg <?php echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?> warning"
-                               onclick="layer_vip(<?php echo $row->id ?>)"></i> layer vip
-                        </p>
-                        <p>
-                            <i id="layer_right-<?php echo $row->id ?>"
-                               class="fa fa-lg <?php echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off' ?> info"
-                               onclick="layer_right(<?php echo $row->id ?>)"></i> layer phải
+                               onclick="layer_left(<?php echo $row->id ?>)"></i> TIN GIÁ HẤP DẪN
                         </p>
 
                     </td>
+
+<!--                    <td>-->
+<!--                        <p>-->
+<!--                            <i id="layer_left---><?php //echo $row->id ?><!--"-->
+<!--                               class="fa fa-lg --><?php //echo $row->layer_left ? 'fa-toggle-on' : 'fa-toggle-off' ?><!-- danger"-->
+<!--                               onclick="layer_left(--><?php //echo $row->id ?><!--//)"></i> TIN GIÁ HẤP DẪN-->
+<!--//                        </p>-->
+<!--                        <p>-->
+<!--                            <i id="layer_vip---><?php //echo $row->id ?><!--"-->
+<!--                               class="fa fa-lg --><?php //echo $row->layer_vip ? 'fa-toggle-on' : 'fa-toggle-off' ?><!-- warning"-->
+<!--                               onclick="layer_vip(--><?php //echo $row->id ?><!--//)"></i> layer vip-->
+<!--//                        </p>-->
+<!--                        <p>-->
+<!--                            <i id="layer_right---><?php //echo $row->id ?><!--"-->
+<!--                               class="fa fa-lg --><?php //echo $row->layer_right ? 'fa-toggle-on' : 'fa-toggle-off' ?><!-- info"-->
+<!--                               onclick="layer_right(--><?php //echo $row->id ?><!--//)"></i> layer phải-->
+<!--//                        </p>-->
+
+<!--                    </td>-->
 
                     <td style="display: grid ">
                         <p>
