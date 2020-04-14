@@ -70,13 +70,6 @@
 
                                 </div>
 
-                                <div class="row m-0">
-                                    <div class="col-xs-6 ibrief"><strong>- DTMB:</strong> <?php echo $ads->acreage ?>
-                                        m<sup>2</sup></div>
-                                    <div class="col-xs-6 ibrief"><strong>- DTSD:</strong> <?php echo $ads->useacreage ?>
-                                        m<sup>2</sup></div>
-                                </div>
-
                                 <div class="row m-0" style="display: none;">
                                     <div class="col-xs-6 ibrief"><strong>- Danh mục:</strong>
                                         <a href="javascript:void(0)">Cần bán</a></div>
