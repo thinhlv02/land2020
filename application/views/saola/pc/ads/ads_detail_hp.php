@@ -174,35 +174,6 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="title_land_box p-3">Bản đồ vị trí:</div>
-                        <div class="pack_land_box" style="border: 0;">
-                            <div class="row">
-                                <div class="col-xs-12 pland" style="border: 0;">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title1_land_box mt-1 mb-1"><strong>Thông tin người đăng</strong></div>
-                        <!--Begin brief_land_box-->
-                        <div class="row pack_land_box poster_land_box" style="border: 0;padding-left:10px;">
-                            <div class="col-xs-3 pic_poster_land_box" style="padding-right: 30px !important;">
-                                <p style="padding: 4px;"><img src="<?php echo public_url('/images/ads/default.png') ?>"
-                                                              alt="Thông tin bất động sản 24h">
-                                </p>
-                            </div>
-
-                            <div class="col-xs-9 detail_poster_land_box">
-                                <p><strong>Công ty/cá nhân</strong>: Thông tin bất động sản 24h</p>
-                                <p><strong>Địa chỉ email</strong>: <?php echo $contact->email ?></p>
-                                <p><strong>Số điện thoại</strong>: <?php echo $contact->phone ?></p>
-                                <p>
-                                    <strong>Địa chỉ liên lạc</strong>: Trụ sở: <?php echo $contact->address ?>
-                                </p>
-                                <p><strong>Website</strong>:
-                                    <a href="<?php echo base_url() ?>" target="_blank"><?php echo base_url() ?></a></p>
-                            </div>
-                        </div>
-                        <!--End brief_land_box-->
                     </div>
                 </div>
                 <!--End detail_land-->
