@@ -62,10 +62,10 @@
 }
 
 .body_top2_box ._pt_vip_hot, .body_top2_box ._vip {
-    /*background: -webkit-linear-gradient(#f6e97f, #fff);*/
-    /*background: -o-linear-gradient(#f6e97f, #fff);*/
-    /*background: -moz-linear-gradient(#f6e97f, #fff);*/
-    /* background: linear-gradient(#f6e97f, #fff); */
+    background: -webkit-linear-gradient(#f6e97f, #fff);
+    background: -o-linear-gradient(#f6e97f, #fff);
+    background: -moz-linear-gradient(#f6e97f, #fff);
+    background: linear-gradient(#f6e97f, #fff);
 }
 
 .body_top2_box .top2 {

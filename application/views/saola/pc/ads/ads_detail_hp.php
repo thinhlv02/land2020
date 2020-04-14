@@ -203,7 +203,7 @@
                                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                         <?php echo $value->title ?>
                                                     </a>
-                                                    <span></span>
+<!--                                                    <span></span>-->
                                                 </h3>
                                                 <div><?php echo $value->intro ?>
                                                 </div>
