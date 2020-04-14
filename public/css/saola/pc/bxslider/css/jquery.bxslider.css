@@ -114,7 +114,7 @@
 .bx-wrapper .bx-controls-direction a.disabled {display: none;}
 
 .vip_box .bx-wrapper .bx-controls-direction a {
-	top: -50px !important;
+	/*top: -50px !important;*/
 	width: 24px;
 	height: 24px;
 }
