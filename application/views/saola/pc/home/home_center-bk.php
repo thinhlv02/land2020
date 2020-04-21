@@ -16,6 +16,22 @@
                                     <img style="width: 100%;height: 210px"
                                          src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                          alt="<?php echo $value->title ?>"></a>
+                                <div class="pt_icon_viphot">
+                                    <?php if ($value->icon_new == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_new.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
+
+                                    <?php if ($value->icon_vip == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_vip.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
+
+                                    <?php if ($value->icon_hot == 1) { ?>
+                                        <img src="<?php echo public_url('images/icon_hot.gif') ?>"
+                                             alt="<?php echo $value->title ?>">
+                                    <?php } ?>
+                                </div>
 
                                 <div class="code_row">TV-<?php echo $value->id . substr($value->code, 0, 2) ?></div>
 

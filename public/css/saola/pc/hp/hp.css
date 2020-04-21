@@ -190,6 +190,13 @@
     left: 8px;
 }
 
+.top2 .pt_icon_viphot_hapdan {
+    position: absolute;
+    /*top: 7px;*/
+    right: 8px;
+    bottom: 12px;
+}
+
 .vip_box > div dl dt div {
     margin-top: 4px;
     text-align: center;

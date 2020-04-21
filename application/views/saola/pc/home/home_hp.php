@@ -38,7 +38,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="pt_icon_viphot" style="">
+                                    <div class="pt_icon_viphot_hapdan" style="">
                                         <?php if ($value->icon_new == 1) { ?>
                                             <img src="<?php echo public_url('images/icon_new.gif') ?>"
                                                  alt="<?php echo $value->title ?>">
