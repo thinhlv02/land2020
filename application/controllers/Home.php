@@ -77,7 +77,7 @@ Class Home extends MY_Controller
         $this->data['ads_right'] = $ads_right;
 
         //ads center
-        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(24, 0)));
+        $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(15, 0)));
         $this->data['ads_center'] = $ads_center;
 
 //        layer left
