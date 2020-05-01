@@ -78,11 +78,11 @@
                                             <?php echo $ads->productcat != '' ? $ads->productcat : 'KXD' ?></a></div>
                                 </div>
 
-                                <div class="row m-0">
-                                    <div class="col-xs-12 ibrief">
-                                        <strong>- Địa chỉ:</strong> <?php echo $ads->area ?>
-                                    </div>
-                                </div>
+<!--                                <div class="row m-0">-->
+<!--                                    <div class="col-xs-12 ibrief">-->
+<!--                                        <strong>- Địa chỉ:</strong> --><?php //echo $ads->area ?>
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div>
 
                             <div class="col-xs-4">
@@ -98,10 +98,23 @@
                         <!--End brief_land_box-->
                         <div style="clear: both;"></div>
 
-                        <div class="title_land_box p-3">Mô tả chi tiết:</div>
+                        <div class="title_land_box p-3">Thông tin chi tiết:</div>
 
                         <div class="pack_land_box">
                             <div class="row12">
+                                <div class="col-xs-12 pland"><strong>Địa chỉ:</strong> <?php echo $ads->area; ?></div>
+
+
+<!--                                <div class="col-xs-8 pland">-->
+<!--                                    <strong>Diện tích SD:</strong> --><?php //echo $ads->useacreage > 0 ? number_format($ads->useacreage) : '0' ?><!-- m<sup>2</sup>-->
+<!--                                </div>-->
+
+                            </div>
+
+                            <div class="row12">
+                                <div class="col-xs-4 pland"><strong>Diện tích:</strong> <?php echo $ads->acreage > 0 ? number_format($ads->acreage) : '0' ?> m<sup>2</sup>
+                                </div>
+
                                 <div class="col-xs-4 pland"><strong>Chiều dài:</strong>
                                     <?php echo $ads->landwidth != '' ? $ads->landwidth : 0 ?>m
                                 </div>
@@ -110,15 +123,11 @@
                                     <?php echo $ads->width != '' ? $ads->width : 0 ?>m
                                 </div>
 
-                                <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
                             </div>
-
-                            <div class="row12">
-                                <div class="col-xs-4 pland"><strong>Diện tích MB:</strong> <?php echo $ads->acreage > 0 ? number_format($ads->acreage) : '0' ?> m<sup>2</sup>
-                                </div>
-                                <div class="col-xs-8 pland">
-                                    <strong>Diện tích SD:</strong> <?php echo $ads->useacreage > 0 ? number_format($ads->useacreage) : '0' ?> m<sup>2</sup>
-                                </div>
+                            <div class="">
+                                <div class="col-xs-4 pland"><strong>Giá bán:</strong> <?php echo $ads->price; ?></div>
+                                <div class="col-xs-4 pland"><strong>SĐT:</strong> <?php echo $ads->phone; ?></div>
+                                <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
 
                             </div>
 
@@ -126,7 +135,7 @@
 
                             <div class="row12">
                                 <div class="col-xs-12 pland">
-                                    <h3 class="title_detail_pland">Thông tin chi tiết:</h3>
+                                    <h3 class="title_detail_pland">Mô tả chi tiết:</h3>
                                     <div class="body_detail_pland line-height-2">
                                         <?php echo $ads->content ?>
                                     </div>
@@ -149,28 +158,28 @@
                         ?>
 
 
-                        <div class="title_land_box p-3">Thông tin liên hệ:</div>
-                        <div class="pack_land_box">
-                            <div class="row12">
-                                <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>
-                                    <?php echo $ads->contact_name != '' ? $ads->contact_name : 'Đang cập nhật' ?>
-                                </div>
-                            </div>
-                            <div class="row12">
-                                <div class="col-xs-12 pland">
-                                    <strong>Địa chỉ :</strong> <?php echo $ads->area ?>
-                                </div>
-                            </div>
-                            <div class="row12">
-                                <div class="col-xs-12 pland"><strong>Điện thoại :</strong>
-                                    <a href="tel:<?php echo $ads->phone ?>"><?php echo $ads->phone ?></a></div>
-                            </div>
-                            <div class="row12">
-                                <div class="col-xs-12 pland"><strong>Email :</strong>
-                                    <a href="javascript:void(0)"><?php echo $ads->email != '' ? $ads->email : 'noemail@gmail.com'; ?></a>
-                                </div>
-                            </div>
-                        </div>
+<!--                        <div class="title_land_box p-3">Thông tin liên hệ:</div>-->
+<!--                        <div class="pack_land_box">-->
+<!--                            <div class="row12">-->
+<!--                                <div class="col-xs-12 pland"><strong>Tên liên lạc :</strong>-->
+<!--                                    --><?php //echo $ads->contact_name != '' ? $ads->contact_name : 'Đang cập nhật' ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row12">-->
+<!--                                <div class="col-xs-12 pland">-->
+<!--                                    <strong>Địa chỉ :</strong> --><?php //echo $ads->area ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row12">-->
+<!--                                <div class="col-xs-12 pland"><strong>Điện thoại :</strong>-->
+<!--                                    <a href="tel:--><?php //echo $ads->phone ?><!--">--><?php //echo $ads->phone ?><!--</a></div>-->
+<!--                            </div>-->
+<!--                            <div class="row12">-->
+<!--                                <div class="col-xs-12 pland"><strong>Email :</strong>-->
+<!--                                    <a href="javascript:void(0)">--><?php //echo $ads->email != '' ? $ads->email : 'noemail@gmail.com'; ?><!--</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
                         <div class="clearfix"></div>
 
