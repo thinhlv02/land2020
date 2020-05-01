@@ -25,11 +25,12 @@
 
                                 <p style="height: 72px !important;overflow: hidden;"><?php echo $value->intro ?></p>
                                 <div class="row area gia-title">
-                                    <div class="col-xs-12 larea">DTMB:
+<!--                                    <div class="col-xs-12 larea">DTMB:-->
+                                    <div class="col-xs-12 larea">Diện Tích:
                                         <strong><?php echo $value->acreage ?> m<sup>2</sup></strong></div>
-                                    <div class="col-xs-12 larea">DTSD:
-                                        <strong><?php echo $value->useacreage != '' ? $value->useacreage : 0 ?> m<sup>2</sup></strong>
-                                    </div>
+<!--                                    <div class="col-xs-12 larea">DTSD:-->
+<!--                                        <strong>--><?php //echo $value->useacreage != '' ? $value->useacreage : 0 ?><!-- m<sup>2</sup></strong>-->
+<!--                                    </div>-->
                                 </div>
                                 <div class="">
                                     <div class="col-xs-6 btn btn-sm" style="background: #eeeeee;">
