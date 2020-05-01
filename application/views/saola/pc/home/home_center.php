@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="row">
                 <div class="box-module">
-                    <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Bất động sản nổi bật12 </div>
+                    <div class="bg-modul"><i class="glyphicon glyphicon-star"></i> Bất động sản nổi bật </div>
                 </div>
 
                 <?php foreach ($ads_center as $key => $value) { ?>
