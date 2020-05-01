@@ -23,7 +23,7 @@
                                     <a target="_blank" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
                                 </h3>
 
-                                <p style="height: 72px !important;overflow: hidden;"><?php echo $value->intro ?></p>
+<!--                                <p style="height: 72px !important;overflow: hidden;">--><?php //echo $value->intro ?><!--</p>-->
                                 <div class="row area gia-title">
 <!--                                    <div class="col-xs-12 larea">DTMB:-->
                                     <div class="col-xs-12 larea">Diện Tích:

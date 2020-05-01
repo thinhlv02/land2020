@@ -41,12 +41,12 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn<span class="required">*</span></label>
-                    <div class="col-md-10 col-sm-10 col-xs-12">
-                        <textarea name="txtIntro" rows="3" class="form-control"></textarea>
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giới thiệu ngắn<span class="required">*</span></label>-->
+<!--                    <div class="col-md-10 col-sm-10 col-xs-12">-->
+<!--                        <textarea name="txtIntro" rows="3" class="form-control"></textarea>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ảnh<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
