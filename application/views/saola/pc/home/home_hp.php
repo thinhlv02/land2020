@@ -28,10 +28,11 @@
                                                     <?php echo $value->title ?> </a>
 <!--                                                <span></span>-->
                                             </h3>
-                                            <div><?php echo $value->intro ?>
+<!--                                            <div>--><?php //echo $value->intro ?>
+                                            <div><?php echo $value->district_name. ' , ' . $value->province_name;  ?>
                                             </div>
                                             <p>
-                                                <strong>DTMB:</strong> <?php echo $value->acreage ?> m2 -
+                                                <strong>Diện Tích:</strong> <?php echo $value->acreage ?> m2 -
                                                 <strong>Giá:</strong>
                                                 <span><?php echo $value->price ?> VND </span>
                                             </p>
