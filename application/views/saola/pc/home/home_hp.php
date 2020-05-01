@@ -32,7 +32,10 @@
                                             <div><?php echo $value->district_name. ' , ' . $value->province_name;  ?>
                                             </div>
                                             <p>
-                                                <strong>Diện Tích:</strong> <?php echo $value->acreage ?> m2 -
+                                                <strong>Diện Tích:</strong> <?php echo $value->acreage ?> m<sup>2</sup>
+                                            </p>
+
+                                            <p>
                                                 <strong>Giá:</strong>
                                                 <span><?php echo $value->price ?> VND </span>
                                             </p>
