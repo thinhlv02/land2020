@@ -81,7 +81,7 @@ Class Home extends MY_Controller
         $this->data['ads_center'] = $ads_center;
 
 //        layer left
-        $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(30, 0)));
+        $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(60, 0)));
         $this->data['layer_left'] = $layer_left;
 
 //        layer vip
