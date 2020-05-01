@@ -12,7 +12,7 @@
                         <div class="card mb-0">
                             <div class="card-body border-primary p-1">
 
-                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                <a target="_blank" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                     <img style="width: 100%;height: 210px"
                                          src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                          alt="<?php echo $value->title ?>"></a>
@@ -20,7 +20,7 @@
                                 <div class="code_row">TV-<?php echo $value->id . substr($value->code, 0, 2) ?></div>
 
                                 <h3 style="height: 44px;font-size: 13px;overflow: hidden;border-bottom: 1px solid #ddd;">
-                                    <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
+                                    <a target="_blank" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><?php echo $value->title ?></a>
                                 </h3>
 
                                 <p style="height: 72px !important;overflow: hidden;"><?php echo $value->intro ?></p>
