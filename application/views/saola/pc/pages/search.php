@@ -78,7 +78,7 @@
                             <div class="vip5">
                                 <div class="product-thumb">
                                     <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
-                                        <img src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->title ?>" noloaderror="true" imgerr="3">
+                                        <img style="width: 272px; height: 170px;" src="<?php echo public_url('images/ads/' . $value->img) ?>" alt="<?php echo $value->title ?>" noloaderror="true" imgerr="3">
                                     </a>
                                 </div>
                                 <div class="home-product-bound">
