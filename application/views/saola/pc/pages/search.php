@@ -82,7 +82,7 @@
                                     </a>
                                 </div>
                                 <div class="home-product-bound">
-                                    <div class="p-title" style="height: 65px;">
+                                    <div class="p-title" style="height: 44px;">
                                         <a title="<?php echo $value->title ?>" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                             <?php echo $value->title ?>***</a>
                                     </div>
