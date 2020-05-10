@@ -73,7 +73,7 @@
 
                     <?php foreach ($lstSearch as $key => $value) { ?>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12 top2 item_ads _hot" onclick="updateView('<?php echo $value->id; ?>');" style="padding-right: 1rem !important;padding-top: 1rem !important;">
+                        <div class="col-md-4 col-sm-6 col-xs-12 top2 item_ads _hot dcccccc" onclick="updateView('<?php echo $value->id; ?>');" style="padding-right: 1rem !important;padding-top: 1rem !important;max-height: 259px;">
 
                             <div class="vip5">
                                 <div class="product-thumb">
