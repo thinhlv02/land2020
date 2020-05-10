@@ -112,8 +112,8 @@
                             </div>
 
                             <div class="row12">
-                                <div class="col-xs-4 pland"><strong>Diện tích:</strong> <?php echo $ads->acreage > 0 ? number_format($ads->acreage) : '0' ?> m<sup>2</sup>
-                                </div>
+<!--                                <div class="col-xs-4 pland"><strong>Diện tích:</strong> --><?php //echo $ads->acreage > 0 ? number_format($ads->acreage) : '0' ?><!-- m<sup>2</sup></div>-->
+                                <div class="col-xs-4 pland"><strong>Diện tích:</strong> <?php echo $ads->acreage; ?> m<sup>2</sup></div>
 
                                 <div class="col-xs-4 pland"><strong>Chiều dài:</strong>
                                     <?php echo $ads->landwidth != '' ? $ads->landwidth : 0 ?>m
