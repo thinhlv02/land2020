@@ -41,7 +41,7 @@
 .pt_hotLand_home, .item_ads h3 a {
     font-size: 13px;
     font-weight: 600;
-    display: inline-block;
+    /*display: inline-block;*/
     line-height: 20px;
     color: #055699;
     height: 100%;
