@@ -70,8 +70,14 @@
 
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Giá tiền<span class="required">*</span></label>
-                    <div class="col-md-10 col-sm-10 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <input type="text" name="price" class="form-control col-md-7 col-xs-12" placeholder="ví dụ : 1,2 tỷ / nền">
+                    </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Ghi chú giá tiền
+                        <span class="required">*</span></label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" name="note_money" class="form-control col-md-7 col-xs-12" placeholder="ví dụ : thương lựợng">
                     </div>
                 </div>
 
