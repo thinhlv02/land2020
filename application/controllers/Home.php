@@ -461,8 +461,8 @@ Class Home extends MY_Controller
 
         $this->data['ads_end'] = $ads_end;
 
-//        pre($ads_end);
-//        die;
+        pre($ads_end);
+        die;
 
         $this->data['title'] = $ads->title;
         $this->data['description'] = $ads->meta_description;
