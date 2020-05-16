@@ -16,7 +16,7 @@
                                 <div class="col-xs-6 top2 top2_up">
                                     <div class="_pt_vip_hot border-danger p-1">
                                         <div class="col-xs-5 ltop2">
-                                            <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
+                                            <a target="_blank" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>"><img
                                                         src="<?php echo public_url('images/ads/' . $value->img) ?>"
                                                         alt="<?php echo $value->title ?>"></a>
                                             <div class="code_row">TV-<?php echo $value->id . substr($value->code, 0, 3) ?></div>
