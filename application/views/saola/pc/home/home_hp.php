@@ -24,7 +24,7 @@
 
                                         <div class="col-xs-7 rtop2">
                                             <h3>
-                                                <a href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
+                                                <a target="_blank" href="<?php echo base_url('rao-vat/' . create_slug($value->title) . '-' . $value->id) ?>">
                                                     <?php echo $value->title ?> </a>
 <!--                                                <span></span>-->
                                             </h3>
