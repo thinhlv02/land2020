@@ -104,6 +104,37 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="card">
+                    <div class="card-body line-height-2 pt-0 p-1" style="background-color: #EDEDED">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="icon-title mb-2" id="">
+                                <strong class="bg">
+                                    <i class="mdi mdi-monitor-multiple"></i>
+                                </strong>
+                                <span class="font-weight-600" style="font-size: 14px !important;">CÁC ĐẠI LÝ ỦY QUYỀN HỢP TÁC VỚI CHÚNG TÔI!</span>
+                            </h2>
+
+                        </div>
+
+                        <?php foreach ($agencies as $key => $value) { ?>
+                            <div class="col-md-4 col-sm-12 col-xs-12 mt-1">
+                                <div class="footer-title pl-1">
+                                    <strong><a href="<?php echo base_url('dai-ly#' . create_slug($value->name)) ?>"><?php echo $value->name ?></a></strong>
+                                </div>
+                                <div>
+                                    <i class="mdi mdi-map-marker text-danger12"></i>
+                                    <span><?php echo $value->address ?></span>
+                                </div>
+                                <div>
+                                    <span><i class="mdi mdi-phone text-danger12"></i> <?php echo $value->phone ?></span>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
