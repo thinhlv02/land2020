@@ -32,7 +32,7 @@
 
                             </div>
                             <div class="footer-bottom-end-row12" style="color: #616161">
-                                Giấy ĐKKD số: 010770894112 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
+                                Giấy ĐKKD số: 010770891411 Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày
                                 14/11/2015
                                 <br>Chịu trách nhiệm nội dung: Bà Nguyễn Hạ Vy - ® Ghi rõ nguồn
                                 "<?php echo $contact->siteurl ?>" khi phát hành lại thông tin từ website này.
