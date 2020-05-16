@@ -29,7 +29,7 @@
 <!--                                                <span></span>-->
                                             </h3>
 <!--                                            <div>--><?php //echo $value->intro ?>
-                                            <div><?php echo $value->district_name. ' , ' . $value->province_name;  ?>
+                                            <div><?php echo 'Địa chỉ: '. $value->district_name. ' , ' . $value->province_name;  ?>
                                             </div>
                                             <p>
                                                 <strong>Diện Tích:</strong> <?php echo $value->acreage ?> m<sup>2</sup>
