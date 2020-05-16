@@ -37,7 +37,14 @@
         <!--        <li class="--><?php //echo activate_menu('land_canthue') ; ?><!--" title="--><?php //echo $common_lang['lmenu_canthue']; ?><!--"><a href="--><?php //echo base_url('can-thue')?><!--"> --><?php //echo $common_lang['lmenu_canthue']; ?><!--</a></li>-->
         <li class="<?php echo activate_menu('price'); ?>" title="<?php echo $common_lang['lmenu_price']; ?>">
             <a href="<?php echo base_url('bao-gia') ?>"> <?php echo $common_lang['lmenu_price']; ?></a></li>
-
+        <li class="dropdown <?php echo ''; ?>" title="<?php echo $common_lang['lmenu_phonebook']; ?>">
+            <a href="javascript:void(0)"> <?php echo $common_lang['lmenu_phonebook']; ?>
+                <i class="mdi mdi-menu-down"></i></a>
+            <div class="dropdown-content">
+                <a href="<?php echo base_url('dai-ly') ?>"><?php echo $common_lang['lbl_menu_agency']; ?></a>
+                <a href="<?php echo base_url('chuyen-vien-tu-van') ?>"><?php echo $common_lang['lmenu_broker']; ?></a>
+            </div>
+        </li>
         <li class="<?php echo activate_menu('contact'); ?>" title="<?php echo $common_lang['lmenu_contact']; ?>">
             <a href="<?php echo base_url('lien-he') ?>"> <?php echo $common_lang['lmenu_contact']; ?></a></li>
         <li class="<?php echo activate_menu('recruit'); ?>" title="<?php echo $common_lang['lmenu_recruitment']; ?>">
