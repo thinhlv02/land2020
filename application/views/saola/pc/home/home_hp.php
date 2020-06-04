@@ -131,6 +131,9 @@
 
 </section>
 
+<!--END div replace Searc-->
+</div>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('.pt_slider').bxSlider({

@@ -676,6 +676,45 @@ Class Home extends MY_Controller
 
     }
 
+    function ajax_search()
+    {
+        $this->load->language('search/search', $this->_langcode);
+        $this->data['search_lang'] = $this->lang->line('search_lang');
+        $lstProvince = $this->_province;
+
+        $province = $this->input->get('province');
+        $province = $province != '' ? $province : '';
+
+        $district = $this->input->get('district');
+        $ward = $this->input->get('ward');
+//        $code = $this->input->get('code');
+        $code = trim($this->input->post('code', true));
+
+        $this->data['code'] = $code;
+        $input = array();
+//        $input['like'] = array('code', $code);
+        $input['like'] = array('phone', $code);
+//        $input['or_like'] = array('phone', $code);
+//          pre($input);
+
+        $lstSearch = $this->ads_model->get_list($input);
+
+        $this->data['lstSearch'] = $lstSearch;
+
+        $this->data['province'] = $province;
+        $this->data['lstProvince'] = $lstProvince;
+
+        // load header
+        $header = array();
+        $header['title'] = $this->data['search_lang']['title'];
+//        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'pages/search', $this->data);
+//        $this->_loadFooter();
+
+    }
+
+
     function user_register()
     {
         $phone = $this->input->get('phone');

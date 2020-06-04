@@ -1,3 +1,5 @@
+<!--start div replace Searc-->
+<div id="result_search">
 <section class="news pt-0">
     <div class="container">
         <div class="col-sm-12 col-md-12">

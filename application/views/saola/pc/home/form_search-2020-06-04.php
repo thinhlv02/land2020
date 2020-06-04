@@ -8,8 +8,8 @@
     <div class="card12" style="border: 1px solid #cacfe7;">
         <div class="card-body pt-0 p-1" style="height: 285px;">
 
-            <form id="formAddProduct_book12" data-parsley-validate class="" method="post"
-                  action=""
+            <form id="formAddProduct_book12" data-parsley-validate class="" method="get"
+                  action="<?php echo base_url('tim-kiem') ?>"
                   enctype="multipart/form-data">
                 <div class="form-group mt-3">
                     <!--                    <label for="email">Mã tin:</label>-->
@@ -19,7 +19,7 @@
                     <!--                                <label for="email">Tỉnh thành</label>-->
                     <select class="form-control" name="province" onchange="get_district(this)">
                         <option value=""> <?php echo $common_lang['choose_province']; ?> </option>
-<!--                        --><?php //echo $_GET['province'] ?>
+                        <?php echo $_GET['province'] ?>
                         <?php foreach ($lstProvince as $key => $value) { ?>
                             <option value="<?= $value->id ?>" <?php if (isset($_GET['province']) && $_GET['province'] == $value->id) echo 'selected' ?>>
                                 <?php echo $value->_name ?>
@@ -64,39 +64,3 @@
     </div>
 
 </div>
-
-<script>
-    $("#formAddProduct_book12").submit(function (e) {
-        // var userid = 12;
-        // var server = 1;
-        //prevent Default functionality
-        e.preventDefault();
-        // console.log('formAddProduct_gold111111111 =>>>>>> ' + userid);
-        // var data = $("#formAddProduct_book12").serialize() + '&userid=' + userid + '&server=' + server;
-        var data = $("#formAddProduct_book12").serialize();
-
-        console.log('data =>>> gold => ' + data);
-
-        var _onSuccess_gold = function (data) {
-            console.log(data);
-            // $("#question").html('');
-            if (data == 'NOT_LOGIN')
-            {
-                window.location.reload(true);
-            }
-            else if (data === 'false')
-            {
-                alert('Danh mục "' + cat_name + '" không tồn tại!');
-            }
-            else
-            {
-                console.log(data);
-                $("#result_search").html(data);
-            }
-        };
-
-
-        getAjax('<?php echo base_url('home/ajax_search') ?>', data, 'POST', _onSuccess_gold);
-
-    });
-</script>
