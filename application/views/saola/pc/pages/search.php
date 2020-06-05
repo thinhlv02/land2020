@@ -1,5 +1,5 @@
 <section class="contact">
-    <div class="container">
+    <div class="container pl-0 pr-0">
         <!--        <div class="title-section"><h2>Kết quả tìm kiếm</h2></div>-->
 
 <!--        --><?php //$this->load->view($this->_template_f . 'home/form_search') ?>
@@ -33,7 +33,7 @@
                                     <div class="product-info p-2">
                                         <i class="mdi mdi-select mdi-24px" style="color: #e40b00"></i>
 
-                                        <?php echo $value->useacreage != '' ? $value->useacreage : 0 ?> m²
+                                        <?php echo $value->acreage != '' ? $value->acreage : 0 ?> m²
                                     </div>
                                     <div class="product-info">
                                         <i class="mdi mdi-map-marker mdi-24px" style="color: #e40b00"></i>
