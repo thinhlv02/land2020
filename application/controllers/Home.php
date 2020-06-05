@@ -758,7 +758,6 @@ Class Home extends MY_Controller
 
     }
 
-
     function user_register()
     {
         $phone = $this->input->get('phone');
@@ -1065,7 +1064,6 @@ Class Home extends MY_Controller
 
     }
 
-
     public function feedback()
     {
         $name = $this->input->post('name');
@@ -1186,6 +1184,5 @@ Class Home extends MY_Controller
 //        $this->data['temp'] = 'site/recruit/recruit';
 //        $this->load->view('site/layout/layout', $this->data);
     }
-
 
 }
