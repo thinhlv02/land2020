@@ -26,6 +26,7 @@ Class Home extends MY_Controller
 
     function index()
     {
+        $per_page = 10;
         $lstProvince = $this->_province;
 
         $this->data['lstProvince'] = $lstProvince;
@@ -79,6 +80,10 @@ Class Home extends MY_Controller
         //ads center
         $ads_center = $this->ads_model->get_list(array('where' => array('ads_center' => 1), 'limit' => array(15, 0)));
         $this->data['ads_center'] = $ads_center;
+
+        $total_rows = $this->ads_model->get_total(array('where' => array('ads_center' => 1)));
+        $lstCenterPaging = getListPaging($per_page, 2, $total_rows, base_url('nha-dat-noi-bat'));
+        $this->data['lstCenterPaging'] = $lstCenterPaging;
 
 //        layer left
         $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(60, 0)));
@@ -346,6 +351,45 @@ Class Home extends MY_Controller
         $this->load->view($this->_template_f . 'news/news_detail', $this->data);
         $this->_loadFooter();
 
+    }
+
+    function ads_center()
+    {
+        $this->load->language('news/news', $this->_langcode);
+        $this->data['news_lang'] = $this->lang->line('news_lang');
+        $per_page = 10;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+        $input['where'] = array('ads_center' => 1);
+        $total_rows = $this->ads_model->get_total($input);
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('nha-dat-noi-bat'));
+
+        if ($offset >= 1)
+        {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->ads_model->get_list($input);
+
+        $highlight = $this->ads_model->get_list(array('where' => array('ads_center' => 1)));
+
+        $this->data['lstCenterPaging'] = $lstPaging;
+        $this->data['ads_center'] = $news;
+        $this->data['highlight'] = $highlight;
+
+//        $news = $this->news_model->get_list();
+//        $this->data['news'] = $news;
+
+        // load header
+        $header = array();
+        $header['title'] = $this->data['news_lang']['title'];
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'pages/ads_center', $this->data);
+        $this->_loadFooter();
     }
 
     function product()

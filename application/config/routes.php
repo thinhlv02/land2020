@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -96,6 +96,11 @@ $route['tin-tuc(.html)?'] = 'home/news';
 $route['tim-kiem(.html)?'] = 'home/search';
 $route['tin-tuc/(:num)'] = 'home/news/$1';
 $route['tin-tuc/(:any)-(:num)(.html)?'] = 'home/news_detail/$1/$2';
+
+//bds nổi bật ->center
+$route['nha-dat-noi-bat(.html)?'] = 'home/ads_center';
+$route['nha-dat-noi-bat/(:num)'] = 'home/ads_center/$1';
+$route['nha-dat-noi-bat/(:any)-(:num)(.html)?'] = 'home/ads_center/$1/$2';
 
 $route['rao-vat(.html)?'] = 'home/product';
 $route['rao-vat/(:num)'] = 'home/product/$1';

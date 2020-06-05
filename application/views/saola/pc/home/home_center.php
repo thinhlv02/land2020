@@ -52,6 +52,10 @@
 
             </div>
 
+            <div class="navigation" style="margin-top: 20px">
+                <?php echo $lstCenterPaging; ?>
+            </div>
+
         </div>
     </div>
 </section>
