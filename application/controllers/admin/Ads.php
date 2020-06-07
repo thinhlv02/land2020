@@ -943,7 +943,7 @@ Class Ads extends MY_Controller
     function ajax_get_list_district()
     {
         $id = $this->input->get('id');
-//        var_dump($id);
+        var_dump($id);
 //        $selected = $this->input->post('selected');
 
         //get list tbl_gift_item_info_by_type
