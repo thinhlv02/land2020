@@ -209,7 +209,7 @@
             };
 
             var _onSuccess = function (data) {
-                // console.log(data);
+                console.log(data);
                 if (data == 'NOT_LOGIN')
                 {
                     window.location.reload(true);
