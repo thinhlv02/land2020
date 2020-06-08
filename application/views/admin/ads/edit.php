@@ -122,7 +122,8 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="area" readonly value="<?php echo $ads->area ?>" id="txtAddress" class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
+<!--                        <input type="text" name="area" readonly value="--><?php //echo $ads->area ?><!--" id="txtAddress" class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">-->
+                        <input type="text" name="area" value="<?php echo $ads->area ?>" id="txtAddress" class="form-control col-md-7 col-xs-12" placeholder="Địa chỉ tin rao vặt">
                     </div>
                 </div>
 
