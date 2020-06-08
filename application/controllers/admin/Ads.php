@@ -420,6 +420,7 @@ Class Ads extends MY_Controller
 //                'document_title' => $this->input->post('txtDocumentTitle'),
                 'price' => $this->input->post('price'),
                 'note_money' => $this->input->post('note_money'),
+                'note_papers' => $this->input->post('note_papers'),
 //                'unit' => $this->input->post('unit'),
                 'acreage' => $this->input->post('acreage'),
                 'useacreage' => $this->input->post('acreage'),

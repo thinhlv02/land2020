@@ -131,7 +131,8 @@
                             <div class="">
                                 <div class="col-xs-4 pland"><strong>Giá bán:</strong> <?php echo $ads->price; ?></div>
                                 <div class="col-xs-4 pland"><strong>SĐT:</strong> <?php echo $ads->phone; ?></div>
-                                <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>
+<!--                                <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> Sổ đỏ Chính Chủ</div>-->
+                                <div class="col-xs-4 pland"><strong>Giấy tờ:</strong> <?php echo $ads->note_papers != '' ? $ads->note_papers : 'Sổ đỏ chính chủ'; ?></div>
 
                             </div>
 
