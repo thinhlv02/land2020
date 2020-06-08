@@ -52,7 +52,7 @@ function getAjax12121(url, params, eID, method, dataType, showLoading, onSuccess
 }
 
 function getAjax(url, params, method, onSuccess, dataType, onError, onComplete) {
-    console.log(url);
+    // console.log(url);
     method = (typeof (method) == 'undefined' || method == '' || (method.toUpperCase() != 'POST' && method.toUpperCase() != 'GET')) ? 'GET' : method.toUpperCase();
     dataType = (typeof (dataType) == 'undefined' || dataType == '') ? 'html' : dataType;
 

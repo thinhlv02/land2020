@@ -111,8 +111,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Địa chỉ<span class="required">*</span></label>
                     <div class="col-md-10 col-sm-10 col-xs-12">
-<!--                        <input type="text" name="area" readonly class="form-control col-md-7 col-xs-12" id="txtAddress" placeholder="Địa chỉ">-->
-                        <input type="text" name="area" class="form-control col-md-7 col-xs-12" id="txtAddress" placeholder="Địa chỉ">
+                        <input type="text" name="area" readonly class="form-control col-md-7 col-xs-12" id="txtAddress" placeholder="Địa chỉ">
                     </div>
                 </div>
 
@@ -210,7 +209,7 @@
             };
 
             var _onSuccess = function (data) {
-                console.log(data);
+                console.log(data.responseText);
                 if (data == 'NOT_LOGIN')
                 {
                     window.location.reload(true);
@@ -221,11 +220,12 @@
                 }
                 else
                 {
-                    $("#divDistrict").html(data);
+                    responseText = data.responseText;
+                    $("#divDistrict").html(responseText);
                 }
             };//
 
-            getAjax('<?php echo admin_url('ads/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo admin_url('ads/ajax_get_list_district?id='); ?>'+id, params, '', 'GET', '', false, _onSuccess);
         }
     }
 
@@ -261,11 +261,12 @@
                 }
                 else
                 {
-                    $("#divWard").html(data);
+                    responseText = data.responseText;
+                    $("#divWard").html(responseText);
                 }
             };
 
-            getAjax('<?php echo admin_url('ads/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo admin_url('ads/ajax_get_list_ward?id='); ?>'+id, params, '', 'GET', '', false, _onSuccess);
         }
     }
 
@@ -299,7 +300,8 @@
                 }
                 else
                 {
-                    $("#divStreet").html(data);
+                    responseText = data.responseText;
+                    $("#divStreet").html(responseText);
                 }
             };
 
