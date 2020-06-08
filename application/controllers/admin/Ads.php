@@ -187,8 +187,11 @@ Class Ads extends MY_Controller
             $created_at = date('Y-m-d', strtotime($created_at));
 
             $txtProvince = $this->input->post('province');
+            $txtProvince = $txtProvince != '' ? $txtProvince : 1;
             $txtDistrict = $this->input->post('district');
+            $txtDistrict = $txtDistrict != '' ? $txtDistrict : 1;
             $txtStreet = $this->input->post('street');
+            $txtStreet = $txtStreet != '' ? $txtStreet : 1;
 
             $province_name = '';
             $district_name = '';
