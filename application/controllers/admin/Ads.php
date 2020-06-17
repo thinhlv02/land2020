@@ -31,6 +31,7 @@ Class Ads extends MY_Controller
         $fromdate = strtotime(trim($this->input->get('fromdate')));
         $province = trim($this->input->get('province'));
         $location = trim($this->input->get('location'));
+        $code = trim($this->input->get('code'));
 //        var_dump($location);
         // validate fromdate and todate
         if ($todate === -1 OR $todate === FALSE OR $fromdate === -1 OR $fromdate === false OR $fromdate > $todate)
@@ -42,8 +43,17 @@ Class Ads extends MY_Controller
         $this->data['fromdate'] = date('d/m/Y', $fromdate);
 
         $input['where'] = array();
-        $input['where'] += array('created_at >=' => '' . date('Y-m-d', $fromdate) . ' ');
-        $input['where'] += array('created_at <=' => '' . date('Y-m-d', $todate) . ' ');
+        if ($code == '')
+        {
+            $input['where'] += array('created_at >=' => '' . date('Y-m-d', $fromdate) . ' ');
+            $input['where'] += array('created_at <=' => '' . date('Y-m-d', $todate) . ' ');
+        }
+
+        if ($code != '')
+        {
+            $input['where'] += array('code' => $code);
+        }
+
         if ($ads_type == '-1')
         {
             $input['where_in'] = array('ads_type', array('1', '2', '3', '4'));

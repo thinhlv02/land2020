@@ -67,6 +67,10 @@
                 </select>
             </div>
 
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+                <input type="text" id="code" name="code" value="" placeholder="Mã tin" class="form-control col-md-7 col-xs-12"/>
+            </div>
+
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="form-group">
                     <button type="button" onclick="loadPage();" class="btn btn-warning">Tìm</button>
@@ -78,6 +82,7 @@
             <thead>
             <tr>
                 <th class="text-center">#</th>
+                <th>Mã tin</th>
                 <th>SĐT</th>
                 <th>Ảnh</th>
                 <th>Tiêu đề</th>
@@ -108,6 +113,7 @@
 
                     </td>
 
+                    <td><?php echo $row->code; ?></td>
                     <td><?php echo $row->phone != '' ? $row->phone : '<span class="text-danger">Chưa Nhập!</span>'; ?></td>
                     <td><img src="<?php echo base_url('public/images/ads/' . $row->img) ?>" style="max-width: 80px">
                     </td>
@@ -208,6 +214,7 @@
         var dateRange = $("#txtDate").val();
         var province = $("#province").val();
         var location = $("#location").val();
+        var code = $("#code").val();
 
         var arrTime = dateRange.split("-");
         var fromdate = arrTime[0];
@@ -218,7 +225,7 @@
         todate = todate.split('/');
         todate = todate[0] + '-' + todate[1] + '-' + todate[2];
         todate = todate.replace(/\s+/g, '');
-        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province=' + province + '&location=' + location;
+        window.location = "<?php echo admin_url("ads") ?>?ads_type=" + ads_type + '&created_by=' + created_by + '&fromdate=' + fromdate + '&todate=' + todate + '&province=' + province + '&location=' + location+ '&code=' + code;
     }
 
     function confirmDel(id)
