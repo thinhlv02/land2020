@@ -8,7 +8,7 @@
     <div class="card12" style="border: 1px solid #cacfe7;">
         <div class="card-body pt-0 p-1" style="height: 285px;">
 
-            <form id="formAddProduct_book12" data-parsley-validate class="" method="post"
+            <form id="formSearchLand" data-parsley-validate class="" method="post"
                   action=""
                   enctype="multipart/form-data">
                 <div class="form-group mt-3">
@@ -66,14 +66,14 @@
 </div>
 
 <script>
-    $("#formAddProduct_book12").submit(function (e) {
+    $("#formSearchLand").submit(function (e) {
         // var userid = 12;
         // var server = 1;
         //prevent Default functionality
         e.preventDefault();
         // console.log('formAddProduct_gold111111111 =>>>>>> ' + userid);
-        // var data = $("#formAddProduct_book12").serialize() + '&userid=' + userid + '&server=' + server;
-        var data = $("#formAddProduct_book12").serialize();
+        // var data = $("#formSearchLand").serialize() + '&userid=' + userid + '&server=' + server;
+        var data = $("#formSearchLand").serialize();
 
         console.log('data =>>> gold => ' + data);
 
