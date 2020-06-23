@@ -177,12 +177,12 @@
                 }
                 else
                 {
-
-                    $("#divDistrict").html(data);
+                    responseText = data.responseText;
+                    $("#divDistrict").html(responseText);
                 }
             };//
 
-            getAjax('<?php echo base_url('home/ajax_get_list_district'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo base_url('home/ajax_get_list_district?id='); ?>' + id, params, '', 'GET', '', false, _onSuccess);
         }
     }
 
@@ -213,11 +213,12 @@
                 }
                 else
                 {
-                    $("#divWard").html(data);
+                    responseText = data.responseText;
+                    $("#divWard").html(responseText);
                 }
             };
 
-            getAjax('<?php echo base_url('home/ajax_get_list_ward'); ?>', params, '', 'GET', '', false, _onSuccess);
+            getAjax('<?php echo base_url('home/ajax_get_list_ward?id='); ?>'+id, params, '', 'GET', '', false, _onSuccess);
         }
     }
 
