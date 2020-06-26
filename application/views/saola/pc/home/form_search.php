@@ -6,14 +6,18 @@
         </div>
     </div>
     <div class="card12" style="border: 1px solid #cacfe7;">
-        <div class="card-body pt-0 p-1" style="height: 285px;">
+        <div class="card-body pt-0 p-1" style="height: 385px;">
 
             <form id="formSearchLand" data-parsley-validate class="" method="post"
                   action=""
                   enctype="multipart/form-data">
                 <div class="form-group mt-3">
                     <!--                    <label for="email">Mã tin:</label>-->
-                    <input type="text" class="form-control" placeholder="<?php echo $common_lang['search_phone']; ?>" name="code">
+                    <input type="text" class="form-control" placeholder="<?php echo 'Mã tin'; ?>" name="code">
+                </div>
+                <div class="form-group mt-3">
+                    <!--                    <label for="email">Mã tin:</label>-->
+                    <input type="text" class="form-control" placeholder="<?php echo $common_lang['search_phone']; ?>" name="phone">
                 </div>
                 <div class="form-group">
                     <!--                                <label for="email">Tỉnh thành</label>-->

@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Home extends MY_Controller
+class Home extends MY_Controller
 {
     public static $LIMIT_COMMENT_PER_PAGE = 2;
 
@@ -726,20 +726,45 @@ Class Home extends MY_Controller
         $this->data['search_lang'] = $this->lang->line('search_lang');
         $lstProvince = $this->_province;
 
-        $province = $this->input->get('province');
+        $province = $this->input->post('province');
         $province = $province != '' ? $province : '';
 
-        $district = $this->input->get('district');
-        $ward = $this->input->get('ward');
+        $district = $this->input->post('district');
+        $ward = $this->input->post('ward');
 //        $code = $this->input->get('code');
+        $phone = trim($this->input->post('phone', true));
         $code = trim($this->input->post('code', true));
 
         $this->data['code'] = $code;
-        $input = array();
+        $input['where'] = array();
 //        $input['like'] = array('code', $code);
-        $input['like'] = array('phone', $code);
+//        $input['like'] = array('phone', $code);
 //        $input['or_like'] = array('phone', $code);
 //          pre($input);
+        if ($province != 0)
+        {
+            $input['where'] += array('province_id' => $province);
+        }
+
+        if ($district != 0)
+        {
+            $input['where'] += array('district_id' => $district);
+        }
+
+        if ($ward != 0)
+        {
+            $input['where'] += array('ward_id' => $ward);
+        }
+        if ($code != '')
+        {
+            $input['where'] += array('code' => $code);
+        }
+
+        if ($phone != '')
+        {
+            $input['where'] += array('phone' => $phone);
+        }
+//        pre($input);
 
         $lstSearch = $this->ads_model->get_list($input);
 
