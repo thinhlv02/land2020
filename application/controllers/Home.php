@@ -88,6 +88,10 @@ class Home extends MY_Controller
 //        layer left
         $layer_left = $this->ads_model->get_list(array('where' => array('layer_left' => 1), 'limit' => array(60, 0)));
         $this->data['layer_left'] = $layer_left;
+        //paging list lest
+        $total_rows_left = $this->ads_model->get_total(array('where' => array('layer_left' => 1)));
+        $lstLeftPaging = getListPaging($per_page, 2, $total_rows_left, base_url('nha-dat-hap-dan'));
+        $this->data['lstLeftPaging'] = $lstLeftPaging;
 
 //        layer vip
         $layer_vip = $this->ads_model->get_list(array('where' => array('layer_vip' => 1), 'limit' => array(8, 0)));
@@ -389,6 +393,45 @@ class Home extends MY_Controller
         $this->_loadHeader($header);
 
         $this->load->view($this->_template_f . 'pages/ads_center', $this->data);
+        $this->_loadFooter();
+    }
+
+    function ads_left()
+    {
+        $this->load->language('news/news', $this->_langcode);
+        $this->data['news_lang'] = $this->lang->line('news_lang');
+        $per_page = 4;
+        $offset = $this->uri->segment(2);
+        $offset = intval($offset);
+        $input = array();
+        $input['where'] = array('ads_left' => 1);
+        $total_rows = $this->ads_model->get_total($input);
+        $lstPaging = getListPaging($per_page, 2, $total_rows, base_url('nha-dat-hap-dan'));
+
+        if ($offset >= 1)
+        {
+            $offset -= 1;
+            $offset = $offset * $per_page;
+        }
+
+        $input['limit'] = array($per_page, $offset);
+        $news = $this->ads_model->get_list($input);
+
+//        $highlight = $this->ads_model->get_list(array('where' => array('ads_center' => 1)));
+
+        $this->data['lstCenterPaging'] = $lstPaging;
+        $this->data['ads_center'] = $news;
+//        $this->data['highlight'] = $highlight;
+
+//        $news = $this->news_model->get_list();
+//        $this->data['news'] = $news;
+
+        // load header
+        $header = array();
+        $header['title'] = $this->data['news_lang']['title'];
+        $this->_loadHeader($header);
+
+        $this->load->view($this->_template_f . 'pages/ads_left', $this->data);
         $this->_loadFooter();
     }
 

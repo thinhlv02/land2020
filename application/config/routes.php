@@ -102,6 +102,11 @@ $route['nha-dat-noi-bat(.html)?'] = 'home/ads_center';
 $route['nha-dat-noi-bat/(:num)'] = 'home/ads_center/$1';
 $route['nha-dat-noi-bat/(:any)-(:num)(.html)?'] = 'home/ads_center/$1/$2';
 
+//bds hấp dẫn ->left
+$route['nha-dat-hap-dan(.html)?'] = 'home/ads_left';
+$route['nha-dat-hap-dan/(:num)'] = 'home/ads_left/$1';
+$route['nha-dat-hap-dan/(:any)-(:num)(.html)?'] = 'home/ads_left/$1/$2';
+
 $route['rao-vat(.html)?'] = 'home/product';
 $route['rao-vat/(:num)'] = 'home/product/$1';
 $route['rao-vat/(:any)-(:num)(.html)?'] = 'home/product_detail/$1/$2';
