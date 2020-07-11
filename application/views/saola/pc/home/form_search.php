@@ -6,20 +6,20 @@
         </div>
     </div>
     <div class="card12" style="border: 1px solid #cacfe7;">
-        <div class="card-body pt-0 p-1" style="height: 385px;">
+        <div class="card-body pt-0 p-1" style="height: 285px;">
 
             <form id="formSearchLand" data-parsley-validate class="" method="post"
                   action=""
                   enctype="multipart/form-data">
-                <div class="form-group mt-3">
+                <div class="form-group mt-1 mb-1">
                     <!--                    <label for="email">Mã tin:</label>-->
                     <input type="text" class="form-control" placeholder="<?php echo 'Mã tin'; ?>" name="code">
                 </div>
-                <div class="form-group mt-3">
+                <div class="form-group mt-1 mb-1">
                     <!--                    <label for="email">Mã tin:</label>-->
                     <input type="text" class="form-control" placeholder="<?php echo $common_lang['search_phone']; ?>" name="phone">
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <!--                                <label for="email">Tỉnh thành</label>-->
                     <select class="form-control" name="province" onchange="get_district(this)">
                         <option value=""> <?php echo $common_lang['choose_province']; ?> </option>
@@ -31,7 +31,7 @@
                         <?php } ?>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <!--                                <label for="email">Quận Huyện</label>-->
                     <div class="" id="divDistrict">
                         <select class="form-control" name="district">
