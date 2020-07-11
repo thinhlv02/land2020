@@ -99,7 +99,6 @@
             }
         };
 
-
         getAjax('<?php echo base_url('home/ajax_search') ?>', data, 'POST', _onSuccess_gold);
 
     });
