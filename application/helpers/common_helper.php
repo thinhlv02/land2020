@@ -66,7 +66,8 @@ function getListPaging($per_page = 10, $uri_segment = 1, $total_rows = 0, $base_
     $config['first_link'] = 'Đầu';
     $config['use_page_numbers'] = TRUE;
 
-    $config['full_tag_open'] = "<ul class='pagination pagination_cus card-body'>";
+//    $config['full_tag_open'] = "<ul class='pagination pagination_cus card-body'>";
+    $config['full_tag_open'] = "<ul class='pagination pagination_cus card-body mt-1 mb-1 p-1'>";
     $config['full_tag_close'] = "</ul>";
     $config['num_tag_open'] = '<li>';
     $config['num_tag_close'] = '</li>';

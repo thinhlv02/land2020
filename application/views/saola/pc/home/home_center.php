@@ -52,7 +52,7 @@
 
             </div>
 
-            <div class="navigation" style="margin-top: 20px">
+            <div class="navigation mt-1" style="">
                 <?php echo $lstCenterPaging; ?>
             </div>
 

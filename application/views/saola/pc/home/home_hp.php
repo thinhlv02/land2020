@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="navigation" style="margin-top: 20px">
+            <div class="navigation" style="">
                 <?php echo $lstLeftPaging; ?>
             </div>
 
