@@ -805,11 +805,16 @@ class Home extends MY_Controller
 
         }
 
-        if ($phone != '')
+        if ($code != '' && $phone != '')
         {
 //            $input['where'] += array('phone' => $phone);
             $input['or_like'] = array('phone', $phone);
         }
+        if ($code == '' && $phone != '')
+        {
+            $input['like'] = array('phone', $phone);
+        }
+
         pre($input);
 
         $lstSearch = $this->ads_model->get_list($input);
