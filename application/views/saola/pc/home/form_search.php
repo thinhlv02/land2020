@@ -10,7 +10,7 @@
 
             <form id="formSearchLand" data-parsley-validate class="" method="post"
                   action=""
-                  enctype="multipart/form-data">
+                  enctype="multipart/form-data" target="_blank">
                 <div class="form-group mt-1 mb-1">
                     <!--                    <label for="email">Mã tin:</label>-->
                     <input type="text" class="form-control" placeholder="<?php echo 'Mã tin'; ?>" name="code">
