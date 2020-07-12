@@ -19,7 +19,7 @@
                     <!--                    <label for="email">Mã tin:</label>-->
                     <input type="text" class="form-control" placeholder="<?php echo $common_lang['search_phone']; ?>" name="phone">
                 </div>
-                <div class="form-group mb-1">
+                <div class="form-group mb-3">
                     <!--                                <label for="email">Tỉnh thành</label>-->
                     <select class="form-control" name="province" onchange="get_district(this)">
                         <option value=""> <?php echo $common_lang['choose_province']; ?> </option>
@@ -31,7 +31,7 @@
                         <?php } ?>
                     </select>
                 </div>
-                <div class="form-group mb-1">
+                <div class="form-group mb-3">
                     <!--                                <label for="email">Quận Huyện</label>-->
                     <div class="" id="divDistrict">
                         <select class="form-control" name="district">
