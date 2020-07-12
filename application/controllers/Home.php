@@ -800,12 +800,15 @@ class Home extends MY_Controller
         }
         if ($code != '')
         {
-            $input['where'] += array('code' => $code);
+//            $input['where'] += array('code' => $code);
+            $input['like'] = array('code', $code);
+
         }
 
         if ($phone != '')
         {
-            $input['where'] += array('phone' => $phone);
+//            $input['where'] += array('phone' => $phone);
+            $input['or_like'] = array('phone', $phone);
         }
         pre($input);
 
