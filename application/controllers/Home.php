@@ -807,7 +807,7 @@ class Home extends MY_Controller
         {
             $input['where'] += array('phone' => $phone);
         }
-//        pre($input);
+        pre($input);
 
         $lstSearch = $this->ads_model->get_list($input);
 
