@@ -53,8 +53,8 @@
                         <div class="brief_land_box row12">
                             <div class="col-xs-8">
                                 <div class="row m-0">
-                                    <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong>
-                                        TV-<?php echo $ads->id . substr($ads->code, 0, 3) ?></div>
+<!--                                    <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong>TV---><?php //echo $ads->id . substr($ads->code, 0, 3) ?><!--</div>-->
+                                    <div class="col-xs-6 ibrief"><strong>- Mã số tin:</strong>TV-<?php echo $ads->code; ?></div>
                                     <div class="col-xs-6 ibrief"><strong>- Ngày cập nhật:</strong>
                                         <?php echo date('d-m-Y', strtotime($ads->created_at)) ?>
                                     </div>
