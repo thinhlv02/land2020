@@ -754,8 +754,8 @@ class Home extends MY_Controller
         }
         if ($code != '') {
 //            $input['where'] += array('code' => $code);
-            $input['like'] = array('code', $code);
-
+//            $input['like'] = array('code', $code);
+            $input['like'] = array('id', $code);
         }
 
         if ($code != '' && $phone != '') {
