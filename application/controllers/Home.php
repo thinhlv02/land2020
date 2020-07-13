@@ -766,7 +766,7 @@ class Home extends MY_Controller
             $input['like'] = array('phone', $phone);
         }
 
-//        pre($input);
+        pre($input);
 
         $lstSearch = $this->ads_model->get_list($input);
 
