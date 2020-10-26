@@ -328,7 +328,7 @@ Class Ads extends MY_Controller
         $this->data['lstProvince'] = $lstProvince;
         $this->data['tab'] = 2;
         $this->data['temp'] = 'admin/ads/index';
-        $this->data['view'] = 'admin/ads/add';
+        $this->data['view'] = 'admin/ads/add_view';
         $this->load->view('admin/layout', $this->data);
     }
 
