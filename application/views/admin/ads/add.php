@@ -181,6 +181,11 @@
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <input type="text" id="txtFrom" name="created_at" required value="" class="form-control col-md-7 col-xs-12"/>
                     </div>
+
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name">Lượt xem<span class="required">*</span></label>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="number" name="view" value="" class="form-control col-md-2 col-xs-12" placeholder="nhập lượt xem">
+                    </div>
                 </div>
 
                 <div class="form-group" style="margin-top: 30px">

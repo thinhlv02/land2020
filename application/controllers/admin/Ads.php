@@ -231,11 +231,14 @@ Class Ads extends MY_Controller
                 $street_name = $street_info->_name;
             }
 
+            $view_input = ($this->input->post('view') == 0) ? generateRandomString(2) : $this->input->post('view');
+
             $data = array(
                 'title' => $title,
                 'ads_type' => $this->input->post('slType'),
                 'code' => generateRandomString(6),
-                'view' => generateRandomString(2),
+//                'view' => generateRandomString(2),
+                'view' => $view_input,
                 'content' => $this->input->post('txtContent'),
                 'area' => $this->input->post('area'),
                 'contact_name' => $this->input->post('txtContactName'),
