@@ -462,6 +462,20 @@ class Home extends MY_Controller
         }
         $this->data['show_ads_link'] = $show_ads_link;
         $ads_type_item = $ads->ads_type;
+        switch ($ads_type_item) {
+            case "1":
+                $ads_type_item_head = 'Cần bán';
+                break;
+            case "2":
+                $ads_type_item_head = 'Cho thuê';
+                break;
+            case "3":
+                $ads_type_item_head = 'Cần mua';
+                break;
+            default:
+                $ads_type_item_head = 'Cần thuê';
+        }
+        $this->data['ads_type_item_head'] = $ads_type_item_head;
 
         $lstDataRelated = $this->ads_model->get_list(array('where' => array('ads_type' => $ads_type_item), 'limit' => array('10', '0')));
         $this->data['lstDataRelated'] = $lstDataRelated;

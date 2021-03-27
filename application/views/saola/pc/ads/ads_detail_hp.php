@@ -8,7 +8,7 @@
 
                 <!--Begin land_box-->
                 <div class="_box">
-                    <p class="title_box" style="color: #055699"><strong>Cần bán
+                    <p class="title_box" style="color: #055699"><strong><?php echo $ads_type_item_head; ?>
                             <i class="mdi mdi-chevron-right"></i> <?php echo $ads->title ?></strong>
                     </p>
                     <div class="land_box p-1">
